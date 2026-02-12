@@ -1,29 +1,30 @@
 import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
+import { assetUrl } from '@/lib/assets';
 
 const hardware = [
   {
     name: 'Mini',
     description: 'Terminal de bolsillo con 5G para aceptar pagos en cualquier lugar.',
-    image: '/hardware-mini.png',
+    image: assetUrl('/hardware-mini.png'),
     imageClass: 'scale-50',
   },
   {
     name: 'Plus',
     description: 'Terminal todo en uno con POS integrado y pagos 5G ultrarrápidos.',
-    image: '/hardware-plus.png',
+    image: assetUrl('/hardware-plus.png'),
     imageClass: 'scale-85',
   },
   {
     name: 'Tap',
     description: 'Acepta pagos sin contacto en tu iPhone o Android, en cualquier momento y lugar.',
-    image: '/hardware-tap.png',
+    image: assetUrl('/hardware-tap.png'),
     imageClass: 'scale-105',
   },
   {
     name: 'Punto de venta',
     description: 'Gestiona mesas, pedidos, cocina y servicio en un solo POS.',
-    image: '/hardware-punto-venta.png',
+    image: assetUrl('/hardware-punto-venta.png'),
     imageClass: 'scale-110',
   },
 ];

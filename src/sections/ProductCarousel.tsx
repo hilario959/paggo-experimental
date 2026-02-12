@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { ArrowRight, ChevronRight } from 'lucide-react';
+import { assetUrl } from '@/lib/assets';
 
 const products = [
   {
@@ -7,21 +8,21 @@ const products = [
     title: 'Pagos',
     description: 'Acepta pagos con tarjeta con terminales modernos, pagos instantáneos y precios transparentes.',
     link: 'Pagos',
-    image: '/pagos-claro.png',
+    image: assetUrl('/pagos-claro.png'),
   },
   {
     id: 'pos',
     title: 'Gestión de Negocios',
     description: 'Gestiona mesas, pedidos, flujo de cocina y reservas en un POS intuitivo, más rápido e inteligente.',
     link: 'Gestión de Negocios',
-    image: '/gestion-negocios-image.png',
+    image: assetUrl('/gestion-negocios-image.png'),
   },
   {
     id: 'intelligence',
     title: 'Banca',
     description: 'Automatiza tu negocio de principio a fin — desde reservas y POS hasta finanzas de back office.',
     link: 'Banca',
-    image: '/banca-clara.png',
+    image: assetUrl('/banca-clara.png'),
   },
 ];
 

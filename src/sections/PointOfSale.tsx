@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Infinity, LayoutGrid } from 'lucide-react';
+import { assetUrl } from '@/lib/assets';
 
 const modes = [
   {
@@ -7,7 +8,7 @@ const modes = [
     label: 'Punto de venta de Servicio Rápido',
     icon: Infinity,
     businesses: ['Comida Rápida', 'Bares & Cafes', 'Minoristas', 'Conveniencia'],
-    image: '/pos-quick-service.jpg',
+    image: assetUrl('/pos-quick-service.jpg'),
   },
   {
     id: 'full',

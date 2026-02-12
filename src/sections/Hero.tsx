@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { assetUrl } from '@/lib/assets';
 
 export function Hero() {
   return (
@@ -12,7 +13,7 @@ export function Hero() {
           loop
           playsInline
           className="w-full h-full object-cover"
-          poster="/hero-bg.jpg"
+          poster={assetUrl('/hero-bg.jpg')}
         >
           <source src="https://videos.pexels.com/video-files/3135924/3135924-uhd_2560_1440_25fps.mp4" type="video/mp4" />
         </video>

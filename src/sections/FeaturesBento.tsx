@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Zap, Clock, Bot, Puzzle, TrendingUp } from 'lucide-react';
+import { assetUrl } from '@/lib/assets';
 
 export function FeaturesBento() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -83,9 +84,9 @@ export function FeaturesBento() {
                   playsInline
                   preload="auto"
                   className="w-full h-full object-cover"
-                  poster="/zavo-ai-phone.jpg"
+                  poster={assetUrl('/zavo-ai-phone.jpg')}
                 >
-                  <source src="/paggo-ai.mp4" type="video/mp4" />
+                  <source src={assetUrl('/paggo-ai.mp4')} type="video/mp4" />
                 </video>
               </div>
               <div className="p-6">

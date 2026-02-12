@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { ArrowRight, Sparkles, Monitor, Phone, Users } from 'lucide-react';
+import { assetUrl } from '@/lib/assets';
 
 const aiFeatures = [
   {
@@ -130,7 +131,7 @@ export function ZavoIntelligence() {
                     {/* Screen */}
                     <div className="relative aspect-[9/19] rounded-[2.5rem] overflow-hidden bg-black">
                       <img
-                        src="/zavo-ai-phone.jpg"
+                        src={assetUrl('/zavo-ai-phone.jpg')}
                         alt="Interfaz Banca Paggo"
                         className="w-full h-full object-cover"
                       />

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { assetUrl } from '@/lib/assets';
 
 const footerLinks = {
   salesSupport: {
@@ -79,7 +80,7 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <a href="/" className="flex items-center gap-2 mb-4">
               <img
-                src="/paggo-logo-Blanco.webp"
+                src={assetUrl('/paggo-logo-Blanco.webp')}
                 alt="Paggo"
                 className="h-10 w-auto"
               />

@@ -1,14 +1,15 @@
 import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
+import { assetUrl } from '@/lib/assets';
 
 const businesses = [
-  { name: 'Tiendas de conveniencia', image: '/business-conveniencia.jpg' },
-  { name: 'Restaurantes de servicio rápido', image: '/business-6.jpg' },
-  { name: 'Cafeterías', image: '/business-2.jpg' },
-  { name: 'Venta de ropa', image: '/business-ropa.jpg' },
-  { name: 'Negocios de servicios', image: '/business-7.jpg' },
-  { name: 'Talleres mecánicos', image: '/business-taller.jpg' },
-  { name: 'Barberías y salones de belleza', image: '/business-barberia.jpg', imageClass: 'scale-125' },
+  { name: 'Tiendas de conveniencia', image: assetUrl('/business-conveniencia.jpg') },
+  { name: 'Restaurantes de servicio rápido', image: assetUrl('/business-6.jpg') },
+  { name: 'Cafeterías', image: assetUrl('/business-2.jpg') },
+  { name: 'Venta de ropa', image: assetUrl('/business-ropa.jpg') },
+  { name: 'Negocios de servicios', image: assetUrl('/business-7.jpg') },
+  { name: 'Talleres mecánicos', image: assetUrl('/business-taller.jpg') },
+  { name: 'Barberías y salones de belleza', image: assetUrl('/business-barberia.jpg'), imageClass: 'scale-125' },
 ];
 const businessesLoop = [...businesses, ...businesses];
 
