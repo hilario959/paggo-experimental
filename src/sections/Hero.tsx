@@ -10,12 +10,17 @@ export function Hero() {
         <video
           autoPlay
           muted
-          loop
           playsInline
+          preload="auto"
           className="w-full h-full object-cover"
           poster={assetUrl('/hero-bg.jpg')}
+          onEnded={(event) => {
+            const video = event.currentTarget;
+            video.currentTime = video.duration;
+            video.pause();
+          }}
         >
-          <source src="https://videos.pexels.com/video-files/3135924/3135924-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+          <source src={assetUrl('/hero-video.mp4')} type="video/mp4" />
         </video>
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/50" />
