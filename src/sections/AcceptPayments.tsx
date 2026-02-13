@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ArrowRight, X, Plus } from 'lucide-react';
+import { assetUrl } from '@/lib/assets';
+import { SmartVideo } from '@/components/media/SmartVideo';
 
 const products = [
   {
@@ -7,21 +9,24 @@ const products = [
     name: 'Plus',
     description: 'Nuestra terminal más potente — con POS integrado, 5G y aprobaciones en 1 segundo. Diseñada para un checkout perfecto en el mostrador o en el piso.',
     link: 'Plus',
-    video: 'https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4',
+    video: assetUrl('/plus-video-section.mov'),
+    videoType: 'video/quicktime',
   },
   {
     id: 'mini',
     name: 'Mini',
     description: 'Una terminal ligera y portátil que cabe en tu bolsillo — y maneja todos los pagos.',
     link: 'Mini',
-    video: 'https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4',
+    video: assetUrl('/mini-video-section.mov'),
+    videoType: 'video/quicktime',
   },
   {
     id: 'tap',
     name: 'Tap',
     description: 'Acepta pagos sin contacto directamente en tu iPhone — sin hardware adicional necesario.',
     link: 'Tap',
-    video: 'https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4',
+    video: assetUrl('/tap-video-section.mov'),
+    videoType: 'video/quicktime',
   },
 ];
 
@@ -32,6 +37,7 @@ const digitalPayments = [
     description: 'Comparte links de pago por WhatsApp, email o redes sociales. Tus clientes pagan en segundos desde cualquier dispositivo.',
     link: 'Links',
     video: 'https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4',
+    videoType: 'video/mp4',
   },
   {
     id: 'qr',
@@ -39,6 +45,7 @@ const digitalPayments = [
     description: 'Genera códigos QR personalizados para que tus clientes paguen escaneando con su teléfono. Rápido, seguro y sin contacto.',
     link: 'QR',
     video: 'https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4',
+    videoType: 'video/mp4',
   },
   {
     id: 'boton',
@@ -46,6 +53,7 @@ const digitalPayments = [
     description: 'Integra un botón de pago en tu sitio web o app. Checkout optimizado para convertir más ventas.',
     link: 'Botón de pagos',
     video: 'https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4',
+    videoType: 'video/mp4',
   },
 ];
 
@@ -155,16 +163,17 @@ export function AcceptPayments() {
                 {/* Right: Product Video */}
                 <div className="hidden lg:block relative">
                   <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
-                    <video
+                    <SmartVideo
                       key={currentProduct?.id}
+                      src={currentProduct?.video ?? ''}
+                      type={currentProduct?.videoType}
                       autoPlay
                       muted
                       loop
                       playsInline
+                      preload="none"
                       className="w-full h-full object-cover"
-                    >
-                      <source src={currentProduct?.video} type="video/mp4" />
-                    </video>
+                    />
                   </div>
                 </div>
               </div>
@@ -217,16 +226,17 @@ export function AcceptPayments() {
                 {/* Right: Digital Payment Video */}
                 <div className="hidden lg:block relative">
                   <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
-                    <video
+                    <SmartVideo
                       key={currentDigital?.id}
+                      src={currentDigital?.video ?? ''}
+                      type={currentDigital?.videoType}
                       autoPlay
                       muted
                       loop
                       playsInline
+                      preload="none"
                       className="w-full h-full object-cover"
-                    >
-                      <source src={currentDigital?.video} type="video/mp4" />
-                    </video>
+                    />
                   </div>
                 </div>
               </div>

@@ -1,17 +1,20 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { assetUrl } from '@/lib/assets';
+import { SmartVideo } from '@/components/media/SmartVideo';
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0">
-        <video
+        <SmartVideo
+          src={assetUrl('/hero-video.mp4')}
           autoPlay
           muted
           playsInline
-          preload="auto"
+          priority
+          preload="metadata"
           className="w-full h-full object-cover"
           poster={assetUrl('/hero-bg.jpg')}
           onEnded={(event) => {
@@ -19,9 +22,7 @@ export function Hero() {
             video.currentTime = video.duration;
             video.pause();
           }}
-        >
-          <source src={assetUrl('/hero-video.mp4')} type="video/mp4" />
-        </video>
+        />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/50" />
       </div>

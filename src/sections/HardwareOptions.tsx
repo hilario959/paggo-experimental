@@ -1,31 +1,32 @@
 import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { assetUrl } from '@/lib/assets';
+import { OptimizedImage } from '@/components/media/OptimizedImage';
 
 const hardware = [
   {
     name: 'Mini',
     description: 'Terminal de bolsillo con 5G para aceptar pagos en cualquier lugar.',
     image: assetUrl('/hardware-mini.png'),
-    imageClass: 'scale-50',
+    imageClass: 'scale-[0.52]',
   },
   {
     name: 'Plus',
     description: 'Terminal todo en uno con POS integrado y pagos 5G ultrarrápidos.',
     image: assetUrl('/hardware-plus.png'),
-    imageClass: 'scale-85',
+    imageClass: 'scale-[0.58]',
   },
   {
     name: 'Tap',
     description: 'Acepta pagos sin contacto en tu iPhone o Android, en cualquier momento y lugar.',
     image: assetUrl('/hardware-tap.png'),
-    imageClass: 'scale-105',
+    imageClass: 'scale-[1.05]',
   },
   {
     name: 'Punto de venta',
     description: 'Gestiona mesas, pedidos, cocina y servicio en un solo POS.',
     image: assetUrl('/hardware-punto-venta.png'),
-    imageClass: 'scale-110',
+    imageClass: 'scale-[2.4]',
   },
 ];
 
@@ -88,11 +89,11 @@ export function HardwareOptions() {
               className={`group bg-gray-50 rounded-2xl overflow-hidden card-hover animate-on-scroll animate-fade-up stagger-${index + 1}`}
             >
               {/* Image */}
-              <div className="aspect-square overflow-hidden bg-white p-6">
-                <img
+              <div className="aspect-square overflow-hidden bg-white p-6 flex items-center justify-center">
+                <OptimizedImage
                   src={item.image}
                   alt={item.name}
-                  className={`w-full h-full object-contain object-center img-hover ${item.imageClass ?? ''}`}
+                  className={`max-h-[85%] max-w-[85%] w-auto h-auto object-contain object-center img-hover ${item.imageClass ?? ''}`}
                 />
               </div>
 

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { assetUrl } from '@/lib/assets';
+import { OptimizedImage } from '@/components/media/OptimizedImage';
 
 const footerLinks = {
   salesSupport: {
@@ -79,7 +80,7 @@ export function Footer() {
           {/* Logo */}
           <div className="col-span-2 md:col-span-1">
             <a href="/" className="flex items-center gap-2 mb-4">
-              <img
+              <OptimizedImage
                 src={assetUrl('/paggo-logo-Blanco.webp')}
                 alt="Paggo"
                 className="h-10 w-auto"

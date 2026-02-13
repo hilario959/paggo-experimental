@@ -41,7 +41,7 @@
   * {
     @apply border-border;
   }
-  a:not(.nav-top-link) {
+  a:not(.nav-top-link):not(.footer-link) {
     color: rgb(82, 102, 176) !important;
   }
   button:not(.accordion-title-button):not(.login-btn):not(.text-only-button):not(.pos-mode-tab),
@@ -128,6 +128,10 @@
   }
   .footer-link:hover {
     color: rgba(255, 255, 255, 0.85) !important;
+  }
+  footer a.footer-link,
+  footer a.footer-link:hover {
+    color: #ffffff !important;
   }
 }
 

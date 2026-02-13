@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { assetUrl } from '@/lib/assets';
+import { OptimizedImage } from '@/components/media/OptimizedImage';
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,7 +37,8 @@ export function Navigation() {
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <img
+            <OptimizedImage
+              priority
               src={isScrolled ? assetUrl('/paggo-logo-verde.webp') : assetUrl('/paggo-logo-Blanco.webp')}
               alt="Paggo"
               className="h-10 w-auto"

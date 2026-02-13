@@ -1,31 +1,40 @@
 import { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Sparkles, Monitor, Phone, Users } from 'lucide-react';
+import { ArrowRight, CalendarCheck, FileText, Landmark, Users } from 'lucide-react';
 import { assetUrl } from '@/lib/assets';
+import { OptimizedImage } from '@/components/media/OptimizedImage';
 
 const aiFeatures = [
   {
     id: 'liquidaciones',
     name: 'Liquidaciones Diarias',
-    description: 'Tu co-piloto de IA para el negocio. Obtén insights, automatiza tareas y realiza cambios en el menú o en todo el sistema al instante.',
+    description: 'Revisa y concilia tus movimientos cada día con un resumen claro de ingresos, comisiones y depósitos para mantener el control de caja.',
     link: 'Banca',
-    icon: Sparkles,
+    icon: CalendarCheck,
+    image: assetUrl('/banca-liquidaciones-diarias.jpg'),
+    imageAlt: 'Resumen diario de liquidaciones en Banca Paggo',
   },
   {
     id: 'servicios',
     name: 'Pago de servicios e impuestos',
-    description: 'Sugerencias inteligentes de pedidos, ventas adicionales automáticas y gestión inteligente de inventario.',
-    icon: Monitor,
+    description: 'Realiza pagos de servicios e impuestos desde un solo lugar, con trazabilidad completa y comprobantes listos para tu operación.',
+    icon: FileText,
+    image: assetUrl('/banca-pago-servicios-impuestos.jpg'),
+    imageAlt: 'Pago de servicios e impuestos desde Banca Paggo',
   },
   {
     id: 'cashout',
     name: 'Cash out en cajeros',
-    description: 'Gestión automatizada de reservas, optimización de mesas y seguimiento de preferencias de huéspedes.',
-    icon: Phone,
+    description: 'Retira efectivo en cajeros afiliados de forma ágil y segura para cubrir necesidades de operación sin fricción.',
+    icon: Landmark,
+    image: assetUrl('/banca-cashout-cajeros.jpg'),
+    imageAlt: 'Opción de cash out en cajeros',
   },
   {
     id: 'planilla',
     name: 'Planilla',
     description: 'Gestiona la nómina de tu equipo de forma automática y eficiente.',
+    image: assetUrl('/banca-planilla.jpg'),
+    imageAlt: 'Gestión de planilla empresarial en Banca Paggo',
     icon: Users,
   },
 ];
@@ -33,6 +42,7 @@ const aiFeatures = [
 export function ZavoIntelligence() {
   const [activeFeature, setActiveFeature] = useState('liquidaciones');
   const sectionRef = useRef<HTMLElement>(null);
+  const currentFeature = aiFeatures.find((feature) => feature.id === activeFeature) ?? aiFeatures[0];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -123,29 +133,18 @@ export function ZavoIntelligence() {
                 ))}
               </div>
 
-              {/* Right: Phone Mockup */}
+              {/* Right: Feature Image */}
               <div className="relative flex justify-center">
                 <div className="relative w-[280px] lg:w-[320px]">
-                  {/* Phone Frame */}
-                  <div className="relative bg-gray-900 rounded-[3rem] p-3 shadow-2xl">
-                    {/* Screen */}
-                    <div className="relative aspect-[9/19] rounded-[2.5rem] overflow-hidden bg-black">
-                      <img
-                        src={assetUrl('/zavo-ai-phone.jpg')}
-                        alt="Interfaz Banca Paggo"
-                        className="w-full h-full object-cover"
-                      />
-                      
-                      {/* Glow Effect */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-navy-500/20 via-transparent to-transparent" />
-                    </div>
-                    
-                    {/* Notch */}
-                    <div className="absolute top-6 left-1/2 -translate-x-1/2 w-24 h-6 bg-black rounded-full" />
+                  <div className="relative aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl">
+                    <OptimizedImage
+                      key={currentFeature.id}
+                      src={currentFeature.image}
+                      alt={currentFeature.imageAlt}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  
-                  {/* Background Glow */}
-                  <div className="absolute -inset-10 bg-gradient-to-r from-navy-500/30 via-teal-500/20 to-navy-500/30 blur-3xl -z-10" />
+                  <div className="absolute -inset-8 bg-gradient-to-r from-navy-500/20 via-teal-500/10 to-navy-500/20 blur-3xl -z-10" />
                 </div>
               </div>
             </div>

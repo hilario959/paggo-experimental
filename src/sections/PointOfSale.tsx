@@ -1,20 +1,21 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, Infinity, LayoutGrid } from 'lucide-react';
+import { ArrowRight, Infinity as InfinityIcon, LayoutGrid } from 'lucide-react';
 import { assetUrl } from '@/lib/assets';
+import { OptimizedImage } from '@/components/media/OptimizedImage';
 
 const modes = [
   {
     id: 'quick',
-    label: 'Punto de venta de Servicio Rápido',
-    icon: Infinity,
+    label: 'Punto de Venta Rápido',
+    icon: InfinityIcon,
     businesses: ['Comida Rápida', 'Bares & Cafes', 'Minoristas', 'Conveniencia'],
-    image: assetUrl('/pos-quick-service.jpg'),
+    image: assetUrl('/punto-de-venta-rapido.png'),
   },
   {
     id: 'full',
-    label: 'Servicio en linea',
+    label: 'Servicio en línea',
     icon: LayoutGrid,
-    businesses: ['Cloud Kitchens', 'ventas en linea', 'Delivery'],
+    businesses: ['Cloud Kitchens', 'Ventas en Línea', 'Delivery'],
     image: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1400',
   },
 ];
@@ -112,19 +113,27 @@ export function PointOfSale() {
         </div>
 
         {/* Mode Cards */}
-        <div className="grid md:grid-cols-2 gap-6 mb-12 animate-on-scroll animate-fade-up stagger-3">
-          {modes.map((mode) => (
+        <div className="mb-12 mx-[calc(50%-50vw)] animate-on-scroll animate-fade-up stagger-3">
+          <div className="overflow-hidden">
             <div
-              key={mode.id}
-              onClick={() => setActiveMode(mode.id as 'quick' | 'full')}
-              className={`relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer group transition-all duration-300 ${
-                activeMode === mode.id
-                  ? 'scale-[1.01] shadow-2xl shadow-black/30'
-                  : 'opacity-80 hover:opacity-100'
+              className={`flex gap-6 transition-transform duration-500 ease-out ${
+                activeMode === 'quick'
+                  ? 'translate-x-0'
+                  : '-translate-x-[36%] sm:-translate-x-[32%] lg:-translate-x-[25%]'
               }`}
             >
+              {modes.map((mode) => (
+                <div
+                  key={mode.id}
+                  onClick={() => setActiveMode(mode.id as 'quick' | 'full')}
+                  className={`relative w-[66%] sm:w-[63%] lg:w-[59%] aspect-[16/10] rounded-2xl overflow-hidden cursor-pointer group transition-all duration-300 shrink-0 ${
+                    activeMode === mode.id
+                      ? 'opacity-100 ring-4 ring-[#4acdce] shadow-2xl shadow-black/25'
+                      : 'opacity-55 hover:opacity-80'
+                  }`}
+                >
               {/* Background Image */}
-              <img
+              <OptimizedImage
                 src={mode.image}
                 alt={mode.label}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -156,7 +165,9 @@ export function PointOfSale() {
                 </div>
               </div>
             </div>
-          ))}
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Mode Titles / Tabs */}
@@ -181,12 +192,12 @@ export function PointOfSale() {
           {featuresByMode[activeMode].map((feature) => (
             <div
               key={`${activeMode}-${feature.title}`}
-              className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-2xl p-7 min-h-[210px] shadow-sm hover:shadow-md transition-shadow"
             >
-              <h4 className="font-semibold text-gray-900 mb-2">
+              <h4 className="font-semibold text-2xl text-gray-900 mb-4">
                 {feature.title}
               </h4>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-base leading-relaxed">
                 {feature.description}
               </p>
             </div>

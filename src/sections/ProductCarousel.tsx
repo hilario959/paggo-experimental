@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { assetUrl } from '@/lib/assets';
+import { OptimizedImage } from '@/components/media/OptimizedImage';
 
 const products = [
   {
@@ -70,7 +71,8 @@ export function ProductCarousel() {
               >
                 {/* Large Image Card */}
                 <div className="relative aspect-[16/10] rounded-3xl overflow-hidden bg-gray-100 mb-6">
-                  <img
+                  <OptimizedImage
+                    priority={activeIndex === 0 && product.id === 'payments'}
                     src={product.image}
                     alt={product.title}
                     className="w-full h-full object-cover"

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
-import { Zap, Clock, Bot, Puzzle, TrendingUp } from 'lucide-react';
+import { Brain, Clock, Bot, Puzzle, Sparkles } from 'lucide-react';
 import { assetUrl } from '@/lib/assets';
+import { SmartVideo } from '@/components/media/SmartVideo';
 
 export function FeaturesBento() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -25,15 +26,15 @@ export function FeaturesBento() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-dark">
+    <section ref={sectionRef} className="pt-0 pb-24 bg-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-[1.15fr_1fr] gap-6">
           <div className="lg:col-start-1 lg:row-start-1">
             <div className="rounded-2xl p-6 bg-gray-900 text-white animate-on-scroll animate-fade-up">
-              <Zap className="w-8 h-8 text-teal-400 mb-4" />
+              <Brain className="w-8 h-8 text-teal-400 mb-4" />
               <h3 className="text-2xl font-bold mb-3">Toma decisiones inteligentes al instante</h3>
               <p className="text-gray-400">
-                Tarifas bajas y transparentes — sin sorpresas. Con tarifas líderes en la industria y precios fijos, Paggo te ayuda a quedarte con más de cada venta.
+                Paggo IA analiza ventas, horarios y comportamiento de clientes en tiempo real para recomendar precios, promociones y próximos pasos con precisión predictiva.
               </p>
             </div>
           </div>
@@ -44,7 +45,7 @@ export function FeaturesBento() {
               <Clock className="w-6 h-6 text-teal-400 mb-3" />
               <h3 className="text-lg font-bold mb-2">Ahorra tiempo</h3>
               <p className="text-gray-400 text-sm">
-                Gestiona tu negocio desde Paggo IA subiendo productos y encontrando ofertas.
+                Automatiza catálogos, inventario y tareas operativas con flujos impulsados por IA que eliminan trabajo manual repetitivo.
               </p>
             </div>
 
@@ -53,7 +54,7 @@ export function FeaturesBento() {
               <Bot className="w-6 h-6 text-teal-400 mb-3" />
               <h3 className="text-lg font-bold mb-2">Automatización</h3>
               <p className="text-gray-300 text-sm">
-                Tu negocio en piloto automático. Agentes de IA manejan operaciones, reportes e insights.
+                Agentes de IA ejecutan reglas, generan reportes y activan acciones inteligentes para operar tu negocio en piloto automático.
               </p>
             </div>
 
@@ -64,7 +65,7 @@ export function FeaturesBento() {
                 <div>
                   <h3 className="text-lg font-bold mb-2">Todo integrado</h3>
                   <p className="text-gray-400 text-sm">
-                    Pagos, POS y back office — conectados perfectamente, gestionados sin esfuerzo.
+                    Unifica pagos, POS, inventario y analítica en un solo sistema conectado para que tu IA tenga contexto completo de extremo a extremo.
                   </p>
                 </div>
               </div>
@@ -77,25 +78,24 @@ export function FeaturesBento() {
           >
             <div className="h-full flex flex-col">
               <div className="flex-1 min-h-0 relative">
-                <video
+                <SmartVideo
+                  src={assetUrl('/paggo-ai-video.mp4')}
                   autoPlay
                   muted
                   loop
                   playsInline
-                  preload="auto"
-                  className="w-full h-full object-cover"
+                  preload="none"
+                  className="w-full h-full object-cover object-right"
                   poster={assetUrl('/zavo-ai-phone.jpg')}
-                >
-                  <source src={assetUrl('/paggo-ai.mp4')} type="video/mp4" />
-                </video>
+                />
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-2">
-                  <TrendingUp className="w-5 h-5 text-teal-400" />
+                  <Sparkles className="w-5 h-5 text-teal-400" />
                   <span className="text-teal-400 font-medium">Paggo IA</span>
                 </div>
                 <p className="text-gray-300 text-sm">
-                  Visibilidad clara de ventas, personal y clientes — sin tener que buscar datos.
+                  Tu copiloto de negocio: conversa, pregunta y recibe insights accionables sobre ventas, personal y clientes en segundos.
                 </p>
               </div>
             </div>

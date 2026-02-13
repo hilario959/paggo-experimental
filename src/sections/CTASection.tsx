@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { assetUrl } from '@/lib/assets';
+import { OptimizedImage } from '@/components/media/OptimizedImage';
 
 export function CTASection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -31,7 +32,7 @@ export function CTASection() {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Sales Team Card */}
           <div className="relative rounded-2xl overflow-hidden aspect-[16/10] animate-on-scroll animate-scale-in">
-            <img
+            <OptimizedImage
               src={assetUrl('/cta-sales.jpg')}
               alt="Empieza por Q40.00 / mes"
               className="w-full h-full object-cover"
@@ -52,7 +53,7 @@ export function CTASection() {
 
           {/* Shop Hardware Card */}
           <div className="relative rounded-2xl overflow-hidden aspect-[16/10] animate-on-scroll animate-scale-in stagger-1">
-            <img
+            <OptimizedImage
               src={assetUrl('/cta-hardware.jpg')}
               alt="Escala tu negocio con Paggo"
               className="w-full h-full object-cover"

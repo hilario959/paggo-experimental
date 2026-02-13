@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { assetUrl } from '@/lib/assets';
+import { OptimizedImage } from '@/components/media/OptimizedImage';
 
 const businesses = [
   { name: 'Tiendas de conveniencia', image: assetUrl('/business-conveniencia.jpg') },
@@ -73,7 +74,7 @@ export function BusinessTypes() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Image */}
-              <img
+              <OptimizedImage
                 src={business.image}
                 alt={business.name}
                 className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${business.imageClass ?? ''}`}
