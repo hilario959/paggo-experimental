@@ -112,7 +112,7 @@ export function AcceptPayments() {
 
         {/* Content Grid with Slide Animation */}
         <div className="relative overflow-hidden">
-          <div 
+          <div
             className="flex transition-transform duration-500 ease-out"
             style={{ transform: `translateX(${showDigitalPayments ? '-50%' : '0%'})` }}
           >
@@ -141,7 +141,7 @@ export function AcceptPayments() {
                           <Plus className="w-5 h-5 text-[rgb(82,102,176)]" />
                         )}
                       </button>
-                      
+
                       {activeProduct === product.id && (
                         <div className="mt-4 animate-fade-in">
                           <p className="text-gray-600 mb-4">
@@ -160,8 +160,8 @@ export function AcceptPayments() {
                   ))}
                 </div>
 
-                {/* Right: Product Video */}
-                <div className="hidden lg:block relative">
+                {/* Product Video (mobile + desktop) */}
+                <div className="relative">
                   <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
                     <SmartVideo
                       key={currentProduct?.id}
@@ -204,7 +204,7 @@ export function AcceptPayments() {
                           <Plus className="w-5 h-5 text-[rgb(82,102,176)]" />
                         )}
                       </button>
-                      
+
                       {activeDigital === item.id && (
                         <div className="mt-4 animate-fade-in">
                           <p className="text-gray-600 mb-4">
@@ -223,8 +223,8 @@ export function AcceptPayments() {
                   ))}
                 </div>
 
-                {/* Right: Digital Payment Video */}
-                <div className="hidden lg:block relative">
+                {/* Digital Payment Video (mobile + desktop) */}
+                <div className="relative">
                   <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
                     <SmartVideo
                       key={currentDigital?.id}

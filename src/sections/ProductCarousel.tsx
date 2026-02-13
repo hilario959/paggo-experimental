@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { assetUrl } from '@/lib/assets';
 import { OptimizedImage } from '@/components/media/OptimizedImage';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const products = [
   {
@@ -30,6 +31,7 @@ const products = [
 export function ProductCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -59,72 +61,112 @@ export function ProductCarousel() {
     <section ref={sectionRef} className="py-16 bg-white animate-on-scroll animate-fade-up overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Carousel Container - Shows multiple cards */}
-        <div className="relative">
-          <div 
-            className="flex transition-transform duration-500 ease-out gap-6"
-            style={{ transform: `translateX(-${activeIndex * (100 / 2.5)}%)` }}
-          >
-            {products.map((product) => (
-              <div 
-                key={product.id} 
-                className="flex-shrink-0 w-[85%] sm:w-[70%] lg:w-[calc(50%-12px)]"
-              >
-                {/* Large Image Card */}
-                <div className="relative aspect-[16/10] rounded-3xl overflow-hidden bg-gray-100 mb-6">
-                  <OptimizedImage
-                    priority={activeIndex === 0 && product.id === 'payments'}
-                    src={product.image}
-                    alt={product.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                
-                {/* Content */}
-                <div className="flex items-start justify-between">
-                  <div className="flex-1 pr-4">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                      {product.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {product.description}
-                    </p>
+        {isMobile ? (
+          <div className="-mx-4 px-4 overflow-x-auto snap-x snap-mandatory">
+            <div className="flex gap-4 w-max pb-2">
+              {products.map((product) => (
+                <div
+                  key={product.id}
+                  className="snap-start flex-shrink-0 w-[86vw] max-w-[360px]"
+                >
+                  <div className="relative aspect-[16/10] rounded-3xl overflow-hidden bg-gray-100 mb-6">
+                    <OptimizedImage
+                      priority={product.id === 'payments'}
+                      src={product.image}
+                      alt={product.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <a
-                    href="#"
-                    className="flex items-center gap-2 text-teal-500 font-medium hover:text-teal-600 transition-colors whitespace-nowrap"
-                  >
-                    {product.link}
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Navigation */}
-        <div className="flex items-center justify-center gap-4 mt-12">
-          {/* Dots */}
-          <div className="flex items-center gap-2 bg-gray-100 rounded-full px-4 py-2">
-            {products.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveIndex(index)}
-                className={`h-2 rounded-full transition-all ${
-                  index === activeIndex ? 'bg-gray-800 w-8' : 'bg-gray-400 w-2'
-                }`}
-              />
-            ))}
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                        {product.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        {product.description}
+                      </p>
+                    </div>
+                    <a
+                      href="#"
+                      className="flex items-center gap-2 text-teal-500 font-medium hover:text-teal-600 transition-colors whitespace-nowrap"
+                    >
+                      {product.link}
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          
-          {/* Arrow Button */}
-          <button
-            onClick={nextSlide}
-            className="w-12 h-12 bg-teal-500 hover:bg-teal-600 rounded-full flex items-center justify-center text-white transition-colors"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
-        </div>
+        ) : (
+          <>
+            <div className="relative">
+              <div
+                className="flex transition-transform duration-500 ease-out gap-6"
+                style={{ transform: `translateX(-${activeIndex * (100 / 2.5)}%)` }}
+              >
+                {products.map((product) => (
+                  <div
+                    key={product.id}
+                    className="flex-shrink-0 w-[85%] sm:w-[70%] lg:w-[calc(50%-12px)]"
+                  >
+                    <div className="relative aspect-[16/10] rounded-3xl overflow-hidden bg-gray-100 mb-6">
+                      <OptimizedImage
+                        priority={activeIndex === 0 && product.id === 'payments'}
+                        src={product.image}
+                        alt={product.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div className="flex items-start justify-between">
+                      <div className="flex-1 pr-4">
+                        <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                          {product.title}
+                        </h3>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          {product.description}
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        className="flex items-center gap-2 text-teal-500 font-medium hover:text-teal-600 transition-colors whitespace-nowrap"
+                      >
+                        {product.link}
+                        <ArrowRight className="w-4 h-4" />
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Navigation */}
+            <div className="flex items-center justify-center gap-4 mt-12">
+              {/* Dots */}
+              <div className="flex items-center gap-2 bg-gray-100 rounded-full px-4 py-2">
+                {products.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveIndex(index)}
+                    className={`h-2 rounded-full transition-all ${
+                      index === activeIndex ? 'bg-gray-800 w-8' : 'bg-gray-400 w-2'
+                    }`}
+                  />
+                ))}
+              </div>
+
+              {/* Arrow Button */}
+              <button
+                onClick={nextSlide}
+                className="w-12 h-12 bg-teal-500 hover:bg-teal-600 rounded-full flex items-center justify-center text-white transition-colors"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+            </div>
+          </>
+        )}
       </div>
     </section>
   );
