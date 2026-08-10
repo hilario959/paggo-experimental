@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="es-GT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paggo — Pagos, gestión y banca para tu negocio</title>
+<meta name="description" content="Acepta pagos con tarjeta, gestiona tu negocio día a día y maneja tus finanzas — todo impulsado por IA, en una sola plataforma. Miles de comercios en Guatemala ya cobran con Paggo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+
+<!-- ======================= NAV ======================= -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="logo">paggo<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <div class="nav-drop">
+        <button class="nav-drop-trigger">Productos
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-drop-panel">
+          <a href="#producto-pagos" data-tab-target="presencial">Paggo Presencial</a>
+          <a href="#producto-pagos" data-tab-target="online">Paggo en Línea</a>
+          <a href="#gestion">Soluciones</a>
+          <a href="#calculadora">Beneficios</a>
+        </div>
+      </div>
+      <a href="https://www.paggo.com/conocenos">Sobre Paggo</a>
+      <a href="https://www.paggo.com/gt/paggo-promos">Paggo Promos</a>
+      <a href="https://www.paggo.com/gt/paggo-tips">Paggo Tips</a>
+      <div class="nav-drop">
+        <button class="nav-drop-trigger">Soporte
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-drop-panel">
+          <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Contáctanos</a>
+          <a href="http://ayuda.paggoapp.com">Centro de Ayuda</a>
+          <a href="https://www.paggo.com/gt/motivos-de-rechazo">Motivos de Rechazo</a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-actions">
+      <a href="https://web.paggoapp.com/" class="btn btn-teal btn-sm">Paggo Web</a>
+      <a href="https://tienda.paggoapp.com/" class="btn btn-square-white btn-sm">Comprar POS</a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <a href="#producto-pagos">Paggo Presencial</a>
+  <a href="#producto-pagos">Paggo en Línea</a>
+  <a href="#gestion">Soluciones</a>
+  <a href="#calculadora">Beneficios</a>
+  <a href="https://www.paggo.com/conocenos">Sobre Paggo</a>
+  <a href="https://www.paggo.com/gt/paggo-promos">Paggo Promos</a>
+  <a href="https://www.paggo.com/gt/paggo-tips">Paggo Tips</a>
+  <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Contáctanos</a>
+  <a href="https://web.paggoapp.com/" class="btn btn-teal btn-block">Paggo Web</a>
+  <a href="https://tienda.paggoapp.com/" class="btn btn-primary btn-block">Comprar POS</a>
+</div>
+
+<main id="top">
+
+  <!-- ======================= HERO (estilo squareup.com) ======================= -->
+  <section class="hero-square">
+    <video class="hero-square-video" autoplay muted loop playsinline poster="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a586d2d8703394e9377ed60_POS%20de%20Paggo.webp">
+      <source src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf%2F6a74d3a6e7bec83280514122_Cover%20Website%20%281%29_webm.webm" type="video/webm">
+      <source src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf%2F6a74d3a6e7bec83280514122_Cover%20Website%20%281%29_mp4.mp4" type="video/mp4">
+    </video>
+    <div class="hero-square-scrim"></div>
+    <div class="container hero-square-content">
+      <h1>Acepta pagos con tarjeta y gestiona tu negocio en un solo lugar</h1>
+      <p>Miles de comercios utilizan nuestros <strong>POS Paggo</strong> para cobrar con tarjeta de crédito y débito en sus negocios. ¿Tú qué estás esperando?</p>
+      <div class="hero-actions">
+        <a href="https://tienda.paggoapp.com/" class="btn btn-primary">Comprar POS</a>
+        <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0" class="btn btn-teal">Contactar un Asesor</a>
+      </div>
+    </div>
+
+    <!-- Reemplazar estas fotos por logos reales de comercios cuando estén disponibles -->
+    <div class="hero-logos-overlay">
+      <p class="biz-marquee-label">Negocios que ya confían en Paggo</p>
+      <div class="biz-marquee" role="list" aria-label="Tipos de negocio que usan Paggo">
+        <div class="biz-marquee-track">
+          <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e49e01104bf58d0b22_Paggo%20para%20Farmacias.webp" alt="">Farmacias</div>
+          <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5f9742921667cc7bc_Paggo%20para%20Restaurantes.webp" alt="">Restaurantes</div>
+          <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e4215f1f24a9a240ef_Paggo%20para%20Salones%20de%20Belleza.webp" alt="">Salones de Belleza</div>
+          <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683155_Paggo%20para%20Tiendas%20de%20Ropa.webp" alt="">Tiendas de Ropa</div>
+          <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5dfac9fd687d39cf2_Paggo%20para%20Talleres%20Meca%CC%81nicos.webp" alt="">Talleres Mecánicos</div>
+          <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e52ba0d59f2fb2f065_Paggo%20para%20Supermercados.webp" alt="">Supermercados</div>
+          <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e566570458eb68b12b_Paggo%20para%20Ferreteri%CC%81as.webp" alt="">Ferreterías</div>
+          <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5bd2a8992cca5158c_Paggo%20para%20Cafeteri%CC%81as.webp" alt="">Cafeterías</div>
+          <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683131_Paggo%20para%20Hoteles.webp" alt="">Hoteles</div>
+          <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5ed14f4eb26171748_Paggo%20para%20Tiendas%20de%20conveniencia.webp" alt="">Tiendas de Conveniencia</div>
+          <!-- Duplicado para el loop continuo -->
+          <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e49e01104bf58d0b22_Paggo%20para%20Farmacias.webp" alt="">Farmacias</div>
+          <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5f9742921667cc7bc_Paggo%20para%20Restaurantes.webp" alt="">Restaurantes</div>
+          <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e4215f1f24a9a240ef_Paggo%20para%20Salones%20de%20Belleza.webp" alt="">Salones de Belleza</div>
+          <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683155_Paggo%20para%20Tiendas%20de%20Ropa.webp" alt="">Tiendas de Ropa</div>
+          <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5dfac9fd687d39cf2_Paggo%20para%20Talleres%20Meca%CC%81nicos.webp" alt="">Talleres Mecánicos</div>
+          <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e52ba0d59f2fb2f065_Paggo%20para%20Supermercados.webp" alt="">Supermercados</div>
+          <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e566570458eb68b12b_Paggo%20para%20Ferreteri%CC%81as.webp" alt="">Ferreterías</div>
+          <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5bd2a8992cca5158c_Paggo%20para%20Cafeteri%CC%81as.webp" alt="">Cafeterías</div>
+          <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683131_Paggo%20para%20Hoteles.webp" alt="">Hoteles</div>
+          <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5ed14f4eb26171748_Paggo%20para%20Tiendas%20de%20conveniencia.webp" alt="">Tiendas de Conveniencia</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ======================= PRODUCTOS / HARDWARE ======================= -->
+  <section class="section" id="producto-pagos" data-tabs>
+    <div class="container">
+      <div class="section-head carousel-head reveal">
+        <div>
+          <span class="eyebrow"><span class="dot"></span>Paggo presencial &amp; en línea</span>
+          <h2>Elige cómo aceptar pagos</h2>
+          <p>Una opción para cada tipo de negocio, desde el más pequeño hasta el que ya está creciendo.</p>
+        </div>
+        <div class="carousel-arrows">
+          <button class="carousel-arrow" data-carousel-dir="-1" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+          </button>
+          <button class="carousel-arrow" data-carousel-dir="1" aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="tabbar">
+        <button data-tab="presencial" class="active">Paggo Presencial</button>
+        <button data-tab="online">Paggo En Línea</button>
+      </div>
+    </div>
+
+    <div data-panel="presencial" class="tab-panel active">
+        <div class="product-grid-full">
+          <a class="product-tile" href="https://tienda.paggoapp.com/products/paggo-mini">
+            <img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf623/6a586ccdc691307ed6a1d81d_Paggo%20Mini.webp" alt="Paggo Mini">
+            <div class="product-tile-info">
+              <strong>Paggo Mini</strong>
+              <span>Terminal ligera y portátil, ideal para negocios en movimiento.</span>
+            </div>
+          </a>
+          <a class="product-tile" href="https://tienda.paggoapp.com/products/paggo-plus">
+            <img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf623/6a586cdea54d5fddc561adfd_Paggo%20Plus.webp" alt="Paggo Plus">
+            <div class="product-tile-info">
+              <strong>Paggo Plus</strong>
+              <span>Terminal más potente, con impresora integrada y 5G.</span>
+            </div>
+          </a>
+          <a class="product-tile" href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">
+            <img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf623/6a586d04b76fca8b467121a4_Paggo%20Tap.webp" alt="Paggo Tap">
+            <div class="product-tile-info">
+              <strong>Paggo Tap</strong>
+              <span>Acepta pagos sin contacto directo en tu celular.</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div data-panel="online" class="tab-panel">
+        <div class="product-grid-full">
+          <a class="product-tile" href="https://web.paggoapp.com/">
+            <img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf623/6a44081ecfe02d248ba7fd65_PaggoLinks.webp" alt="Paggo Links">
+            <div class="product-tile-info">
+              <strong>Paggo Links</strong>
+              <span>Envía un link de pago y cobra a distancia.</span>
+            </div>
+          </a>
+          <a class="product-tile" href="https://web.paggoapp.com/">
+            <img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf623/6a43fb64fee61b5598f65bb5_QR%20(1).webp" alt="Paggo QR">
+            <div class="product-tile-info">
+              <strong>Paggo QR</strong>
+              <span>Cobra con un código QR, sin hardware adicional.</span>
+            </div>
+          </a>
+          <a class="product-tile" href="https://www.paggo.com/desarrolladores">
+            <img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf623/6a4409fb425677278847a7b9_PaggoPay.webp" alt="Paggo Pay">
+            <div class="product-tile-info">
+              <strong>Paggo Pay</strong>
+              <span>Botón de pago para tu tienda en línea.</span>
+            </div>
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <!-- ======================= GESTIÓN DE NEGOCIO — POR TIPO DE NEGOCIO ======================= -->
+  <section class="section sectors" id="gestion">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--dark"><span class="dot"></span>Diseñado para tu tipo de negocio</span>
+        <h2 style="color:#fff;">Paggo funciona como funciona tu negocio</h2>
+        <p style="color:rgba(255,255,255,.6);">No es un sistema genérico — se adapta a cómo cobrás, vendés y operás según tu rubro.</p>
+      </div>
+
+      <div class="sector-rows">
+        <div class="sector-row reveal">
+          <div class="sector-video">
+            <video autoplay muted loop playsinline poster="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5f9742921667cc7bc_Paggo%20para%20Restaurantes.webp">
+              <source src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf%2F6a74d3a6e7bec83280514122_Cover%20Website%20%281%29_mp4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="sector-info">
+            <span class="sector-label">Restaurantes</span>
+            <p>Cobrá en la mesa, imprimí el voucher o facturá al instante, y llevá el control de tu inventario de cocina — todo desde la misma terminal.</p>
+            <ul class="sector-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cobro en mesa con impresión de voucher</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Factura electrónica automática por venta</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Control de inventario de cocina</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Propina activada en cada cobro</li>
+            </ul>
+            <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0" class="sector-link">Hablar con un asesor
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="sector-row sector-row--reverse reveal">
+          <div class="sector-video">
+            <video autoplay muted loop playsinline poster="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683155_Paggo%20para%20Tiendas%20de%20Ropa.webp">
+              <source src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf%2F6a74d3a6e7bec83280514122_Cover%20Website%20%281%29_mp4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="sector-info">
+            <span class="sector-label">Tiendas</span>
+            <p>Vendé en el mostrador y en línea con el mismo catálogo. Tu inventario se actualiza solo, sin importar dónde vendiste.</p>
+            <ul class="sector-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Catálogo compartido: mostrador y en línea</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Inventario que se actualiza con cada venta</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Link de tienda para vender por WhatsApp</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Reportería de ventas en tiempo real</li>
+            </ul>
+            <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0" class="sector-link">Hablar con un asesor
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="sector-row reveal">
+          <div class="sector-video">
+            <video autoplay muted loop playsinline poster="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5dfac9fd687d39cf2_Paggo%20para%20Talleres%20Meca%CC%81nicos.webp">
+              <source src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf%2F6a74d3a6e7bec83280514122_Cover%20Website%20%281%29_mp4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="sector-info">
+            <span class="sector-label">Servicios</span>
+            <p>Cobrá por el trabajo que hiciste, activá propina y llevá el registro de cada cliente — todo desde tu celular.</p>
+            <ul class="sector-feats">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cobro rápido por el trabajo realizado</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Propina activada para tu equipo</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Colaboradores con roles y accesos</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Historial de cada cliente atendido</li>
+            </ul>
+            <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0" class="sector-link">Hablar con un asesor
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= BANCA ======================= -->
+  <!-- ======================= BENEFICIOS + CALCULADORA ======================= -->
+  <section class="section" id="calculadora" style="background:var(--bg-soft);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="dot"></span>Beneficios &amp; precios</span>
+        <h2>Transparente desde el primer centavo</h2>
+        <p>Sin letras pequeñas. Así de simple es lo que recibes por cada venta.</p>
+      </div>
+      <div class="benefits-wrap">
+        <div class="reveal">
+          <div class="benefit-list">
+            <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Acepta tarjetas nacionales e internacionales VISA y Mastercard</span></div>
+            <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Afiliación en minutos, sin papeleo</span></div>
+            <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Recibe tu POS en 24 a 72 horas, con envío gratis</span></div>
+            <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>SIM con internet gratuito incluido</span></div>
+            <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Liquidación rápida de tus ventas</span></div>
+            <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Control y seguimiento de tu negocio desde un solo lugar</span></div>
+            <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Exposición y publicidad para tu negocio</span></div>
+            <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Capacitaciones para impulsar el crecimiento de tu negocio</span></div>
+          </div>
+        </div>
+        <div class="calc-card reveal">
+          <div class="calc-price">
+            <span class="calc-price-value">Q40.00</span>
+            <span class="calc-price-period">/ mes</span>
+            <span class="calc-price-note">Todo incluido, sin costos ocultos</span>
+          </div>
+          <span class="rate">4.83% (IVA incluido) + retención</span>
+          <div class="calc-field">
+            <label for="calc-amount">Ingresa el monto de la venta</label>
+            <div class="calc-input">
+              <span>Q</span>
+              <input type="text" id="calc-amount" inputmode="decimal" value="100" />
+            </div>
+          </div>
+          <div class="calc-result">
+            <div>
+              <div class="label">Para esta venta tú recibes</div>
+              <div class="value" id="calc-result">Q 95.17</div>
+            </div>
+          </div>
+          <div class="calc-breakdown">
+            <div><span>Monto de la venta</span><span id="calc-net-line">Q 100.00</span></div>
+            <div><span>Comisión Paggo</span><span id="calc-fee">Q 4.83</span></div>
+          </div>
+          <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0" class="btn btn-primary btn-block">Afiliarme</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= INDUSTRIAS ======================= -->
+  <!-- ======================= TESTIMONIOS (grid animado estilo squareup.com) ======================= -->
+  <section class="section section--tight testi-grid-section">
+    <div class="testi-marquee">
+      <div class="testi-marquee-track">
+        <div class="testi-photo"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e49e01104bf58d0b22_Paggo%20para%20Farmacias.webp" alt="Farmacia usando Paggo"></div>
+        <div class="testi-photo"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5bd2a8992cca5158c_Paggo%20para%20Cafeteri%CC%81as.webp" alt="Cafetería usando Paggo"></div>
+        <div class="testi-photo"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683131_Paggo%20para%20Hoteles.webp" alt="Hotel usando Paggo"></div>
+        <div class="testi-photo"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683155_Paggo%20para%20Tiendas%20de%20Ropa.webp" alt="Tienda de ropa usando Paggo"></div>
+        <div class="testi-photo"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e52ba0d59f2fb2f065_Paggo%20para%20Supermercados.webp" alt="Supermercado usando Paggo"></div>
+        <!-- Duplicado para el loop continuo -->
+        <div class="testi-photo" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e49e01104bf58d0b22_Paggo%20para%20Farmacias.webp" alt=""></div>
+        <div class="testi-photo" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5bd2a8992cca5158c_Paggo%20para%20Cafeteri%CC%81as.webp" alt=""></div>
+        <div class="testi-photo" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683131_Paggo%20para%20Hoteles.webp" alt=""></div>
+        <div class="testi-photo" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683155_Paggo%20para%20Tiendas%20de%20Ropa.webp" alt=""></div>
+        <div class="testi-photo" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e52ba0d59f2fb2f065_Paggo%20para%20Supermercados.webp" alt=""></div>
+      </div>
+    </div>
+
+    <div class="container testi-center reveal">
+      <div class="testi-stars" aria-label="Calificación de 5 estrellas">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="testi-line">El proveedor financiero favorito de las pymes</p>
+    </div>
+
+    <div class="testi-marquee testi-marquee--reverse">
+      <div class="testi-marquee-track">
+        <div class="testi-photo"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5f9742921667cc7bc_Paggo%20para%20Restaurantes.webp" alt="Restaurante usando Paggo"></div>
+        <div class="testi-photo"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e4215f1f24a9a240ef_Paggo%20para%20Salones%20de%20Belleza.webp" alt="Salón de belleza usando Paggo"></div>
+        <div class="testi-photo"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5dfac9fd687d39cf2_Paggo%20para%20Talleres%20Meca%CC%81nicos.webp" alt="Taller mecánico usando Paggo"></div>
+        <div class="testi-photo"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e566570458eb68b12b_Paggo%20para%20Ferreteri%CC%81as.webp" alt="Ferretería usando Paggo"></div>
+        <div class="testi-photo"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5ed14f4eb26171748_Paggo%20para%20Tiendas%20de%20conveniencia.webp" alt="Tienda de conveniencia usando Paggo"></div>
+        <!-- Duplicado para el loop continuo -->
+        <div class="testi-photo" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5f9742921667cc7bc_Paggo%20para%20Restaurantes.webp" alt=""></div>
+        <div class="testi-photo" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e4215f1f24a9a240ef_Paggo%20para%20Salones%20de%20Belleza.webp" alt=""></div>
+        <div class="testi-photo" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5dfac9fd687d39cf2_Paggo%20para%20Talleres%20Meca%CC%81nicos.webp" alt=""></div>
+        <div class="testi-photo" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e566570458eb68b12b_Paggo%20para%20Ferreteri%CC%81as.webp" alt=""></div>
+        <div class="testi-photo" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5ed14f4eb26171748_Paggo%20para%20Tiendas%20de%20conveniencia.webp" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= APP CTA ======================= -->
+  <section class="section">
+    <div class="container">
+      <div class="app-cta reveal">
+        <div class="app-cta-grid">
+          <div class="app-cta-copy">
+            <span class="eyebrow"><span class="dot"></span>Paggo App</span>
+            <h2>Descarga la app y únete a miles de comercios que ahora venden más.</h2>
+            <p>Gestiona pagos, inventario, reportería y banca desde tu celular — en cualquier momento y lugar.</p>
+            <div class="store-badges">
+              <a href="https://apps.apple.com/gt/app/paggo/id1611051340" class="btn btn-ghost" style="background:rgba(255,255,255,.1);color:#fff;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8.87-.16 1.71-.85 3.08-.72 1.53.13 2.68.7 3.44 1.71-3.11 1.92-2.47 5.9.5 7.11-.6 1.6-1.42 3.16-2.1 4.07M12.03 7.25c-.15-2.23 1.66-4.09 3.74-4.25.29 2.19-1.98 4.35-3.74 4.25"/></svg>
+                App Store
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.paggoapp&hl=es&gl=US&pli=1" class="btn btn-ghost" style="background:rgba(255,255,255,.1);color:#fff;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.4c-.4.2-.6.6-.6 1.1v17c0 .5.2.9.6 1.1l9.6-9.6-9.6-9.6zM14.3 12l2.4-2.4-9.7-5.6c-.3-.2-.7-.2-1 0l8.3 8zM17.7 9.8l-2.4 2.2 2.4 2.2 3-1.7c.5-.3.5-1 0-1.3l-3-1.4zM6.9 21.8c.3.2.7.2 1 0l9.7-5.6-2.4-2.4-8.3 8z"/></svg>
+                Google Play
+              </a>
+            </div>
+            <div class="app-cta-stat"><strong>1M+</strong><span>usuarios administrando su negocio con Paggo</span></div>
+          </div>
+          <div class="app-cta-visual">
+            <img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/69178c2c49afb52afdd014e7_Celular%20(1)-p-1080.webp" alt="Paggo App">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CTA FINAL ======================= -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="reveal">¿Listo para cobrar, gestionar y crecer con Paggo?</h2>
+      <p class="reveal">Afíliate en minutos. Sin letra pequeña, sin complicaciones.</p>
+      <div class="hero-actions reveal">
+        <a href="https://tienda.paggoapp.com/" class="btn btn-primary">Comprar POS</a>
+        <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0" class="btn btn-teal">Hablar con un asesor</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo">paggo<span class="dot">.</span></a>
+        <p>Pagos, gestión de negocio y banca — todo en una sola plataforma, para que tu negocio crezca sin fricción.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/paggo.GT/" aria-label="Instagram"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/66c64b05144d4891a9d6d9eb_instagram-svgrepo-com%20(4).svg" width="16" height="16" alt=""></a>
+          <a href="https://www.facebook.com/paggoapp" aria-label="Facebook"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/66c64b073810a28badda9714_facebook-176-svgrepo-com%20(1).svg" width="16" height="16" alt=""></a>
+          <a href="https://www.linkedin.com/company/paggoapp/" aria-label="LinkedIn"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/66c64b0bdac0fa91c621bf41_linked-in-logo-of-two-letters-svgrepo-com%20(1).svg" width="16" height="16" alt=""></a>
+          <a href="https://www.tiktok.com/@paggo.gt" aria-label="TikTok"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/695c03ff8019b3cbce4903b9_tiktok-svgrepo-com.svg" width="16" height="16" alt=""></a>
+          <a href="https://www.youtube.com/@paggoapp" aria-label="YouTube"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/695c0474186443bcdae3e1cd_youtube-168-svgrepo-com%20(1).svg" width="16" height="16" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Productos</h5>
+        <ul>
+          <li><a href="#producto-pagos">Paggo Presencial</a></li>
+          <li><a href="#producto-pagos">Paggo En Línea</a></li>
+          <li><a href="#gestion">Soluciones</a></li>
+          <li><a href="#calculadora">Beneficios</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Nosotros</h5>
+        <ul>
+          <li><a href="/conocenos">Sobre nosotros</a></li>
+          <li><a href="/gt/paggo-tips">Paggo Tips</a></li>
+          <li><a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Contáctanos</a></li>
+          <li><a href="/gt/motivos-de-rechazo">Motivos de rechazo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Otros</h5>
+        <ul>
+          <li><a href="/terminos-y-condiciones-paggo">Términos y condiciones</a></li>
+          <li><a href="/privacy-policy">Políticas de privacidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="mailto:soporte@paggo.com">soporte@paggo.com</a></li>
+          <li><a href="tel:50222942220">PBX 2294-2220</a></li>
+          <li><a href="https://wa.me/50230327066">WhatsApp 3032-7066</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Paggo Technologies</span>
+      <div class="legal">
+        <a href="/terminos-y-condiciones-paggo">Términos</a>
+        <a href="/privacy-policy">Privacidad</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
