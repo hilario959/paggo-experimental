@@ -471,7 +471,7 @@ h1,h2,h3,h4,p{margin:0;}
   opacity:1;
 }
 @media (max-width:900px){
-  .product-tile{ flex-basis:80vw; min-width:0; }
+  .product-tile{ flex-basis:80vw; flex-shrink:0; min-width:0; }
 }
 @media (hover:none){
   .product-tile-info span{ max-height:60px; opacity:1; }
