@@ -157,12 +157,12 @@ h1,h2,h3,h4,p{margin:0;}
 .nav-links{
   display:flex;
   align-items:center;
-  gap:8px;
+  gap:2px;
 }
 .nav-links a{
-  padding:10px 16px;
+  padding:10px 11px;
   border-radius:var(--radius-pill);
-  font-size:15px;
+  font-size:14px;
   font-weight:500;
   color:rgba(255,255,255,.85);
   transition:background .2s, color .2s;
@@ -174,14 +174,15 @@ h1,h2,h3,h4,p{margin:0;}
 
 .nav-drop{ position:relative; }
 .nav-drop-trigger{
-  display:flex; align-items:center; gap:5px;
-  padding:10px 16px;
+  display:flex; align-items:center; gap:4px;
+  padding:10px 11px;
   border-radius:var(--radius-pill);
-  font-size:15px; font-weight:500;
+  font-size:14px; font-weight:500;
   color:rgba(255,255,255,.85);
   background:none; border:none;
   transition:background .2s, color .2s;
   font-family:inherit;
+  white-space:nowrap;
 }
 .nav-drop-trigger svg{ width:14px;height:14px; transition:transform .2s; }
 .nav-drop:hover .nav-drop-trigger{ background:rgba(255,255,255,.15); color:#fff; }
@@ -308,6 +309,14 @@ h1,h2,h3,h4,p{margin:0;}
 
 .btn-square-white{ background:#fff; color:var(--ink); box-shadow:0 6px 16px rgba(0,0,0,.12); }
 .btn-square-white:hover{ background:#f0f0f2; }
+
+/* Hero corto para páginas de tipo de negocio (Tiendas / Restaurantes / Servicios) */
+.page-hero{ height:56vh; min-height:420px; max-height:560px; }
+.page-hero .hero-square-content{ padding-top:76px; }
+.page-hero .eyebrow{ margin-bottom:4px; }
+@media (max-width:640px){
+  .page-hero{ height:60vh; min-height:460px; }
+}
 
 /* Franja de tipos de negocio sobre el video del hero */
 .hero-logos-overlay{
