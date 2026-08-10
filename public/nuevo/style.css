@@ -318,6 +318,29 @@ h1,h2,h3,h4,p{margin:0;}
   .page-hero{ height:60vh; min-height:460px; }
 }
 
+/* Hero sin video, para páginas conceptuales (Financiamiento, Sistemas de gestión) */
+.page-hero-solid{
+  position:relative;
+  height:48vh; min-height:380px; max-height:480px;
+  display:flex; align-items:center;
+  background:linear-gradient(135deg,var(--ink) 0%, #262A45 100%);
+  overflow:hidden;
+}
+.page-hero-solid .hero-square-content{ padding-top:76px; }
+.page-hero-solid .eyebrow{ margin-bottom:4px; }
+@media (max-width:640px){
+  .page-hero-solid{ height:56vh; min-height:420px; }
+}
+
+/* Link "ver todas" al final de un dropdown */
+.nav-drop-panel a.more{
+  border-top:1px solid var(--line);
+  margin-top:4px;
+  padding-top:14px;
+  font-weight:600;
+  color:var(--primary) !important;
+}
+
 /* Franja de tipos de negocio sobre el video del hero */
 .hero-logos-overlay{
   position:absolute;
