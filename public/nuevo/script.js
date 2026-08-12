@@ -13,6 +13,11 @@ navToggle.addEventListener('click', () => {
 mobileMenu.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => mobileMenu.classList.remove('open'));
 });
+mobileMenu.querySelectorAll('[data-mobile-group]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.mobile-menu-group').classList.toggle('open');
+  });
+});
 
 // Acordeón + imagen (páginas de tipo de negocio)
 document.querySelectorAll('[data-accordion]').forEach(acc => {
