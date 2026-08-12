@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=11">
+<link rel="stylesheet" href="../style.css?v=12">
 </head>
 <body>
 
@@ -269,36 +269,111 @@
     </div>
   </section>
 
-  <!-- ======================= INVENTARIO Y CATÁLOGO ======================= -->
-  <section class="section">
+  <!-- ======================= CATEGORÍAS (tabs) ======================= -->
+  <section class="section" data-tabs>
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow"><span class="dot"></span>Inventario y catálogo</span>
-        <h2>Un mismo catálogo para todo tu negocio</h2>
-        <p>Ya sea que vendas en mostrador, en línea o en varios puntos, tu inventario se mantiene sincronizado.</p>
+        <span class="eyebrow"><span class="dot"></span>Todo en un solo lugar</span>
+        <h2>Elige qué necesita tu negocio</h2>
+        <p>Cada categoría reúne las herramientas de gestión conectadas a tus ventas con Paggo.</p>
       </div>
-      <div class="benefit-list reveal">
-        <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Catálogo compartido: mostrador y en línea</span></div>
-        <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Inventario que se actualiza con cada venta</span></div>
-        <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Control de inventario de cocina (restaurantes)</span></div>
+      <div class="tabbar reveal">
+        <button data-tab="punto-de-venta" class="active">Punto de venta</button>
+        <button data-tab="catalogo">Catálogo</button>
+        <button data-tab="reporteria">Reportería</button>
+        <button data-tab="facturacion">Facturación</button>
+        <button data-tab="equipo">Equipo</button>
+      </div>
+      <div data-panel="punto-de-venta" class="tab-panel active">
+        <div class="benefit-list">
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Cobro en mesa con impresión de voucher</span></div>
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Cobro rápido por el trabajo realizado</span></div>
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Acepta tarjetas nacionales e internacionales VISA y Mastercard</span></div>
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Liquidación rápida de tus ventas</span></div>
+        </div>
+      </div>
+      <div data-panel="catalogo" class="tab-panel">
+        <div class="benefit-list">
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Catálogo compartido: mostrador y en línea</span></div>
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Inventario que se actualiza con cada venta</span></div>
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Link de tienda para vender por WhatsApp</span></div>
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Control de inventario de cocina (restaurantes)</span></div>
+        </div>
+      </div>
+      <div data-panel="reporteria" class="tab-panel">
+        <div class="benefit-list">
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Reportería de ventas en tiempo real</span></div>
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Control y seguimiento de tu negocio desde un solo lugar</span></div>
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Historial de cada cliente atendido</span></div>
+        </div>
+      </div>
+      <div data-panel="facturacion" class="tab-panel">
+        <div class="benefit-list">
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Factura electrónica automática por venta</span></div>
+        </div>
+      </div>
+      <div data-panel="equipo" class="tab-panel">
+        <div class="benefit-list">
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Colaboradores con roles y accesos</span></div>
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Propina activada en cada cobro</span></div>
+          <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Capacitaciones para impulsar el crecimiento de tu negocio</span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ======================= REPORTERÍA Y EQUIPO ======================= -->
+  <!-- ======================= HECHO PARA TU TIPO DE NEGOCIO ======================= -->
   <section class="section" style="background:var(--bg-soft);">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow"><span class="dot"></span>Reportería y equipo</span>
-        <h2>Toda la información de tu negocio, en un solo lugar</h2>
-        <p>Reportes en tiempo real y control sobre lo que puede hacer cada colaborador.</p>
+        <span class="eyebrow"><span class="dot"></span>Hecho para tu rubro</span>
+        <h2>Elige tu tipo de negocio</h2>
+        <p>Cada rubro cobra y gestiona distinto — mira cómo se adapta Paggo al tuyo.</p>
       </div>
-      <div class="benefit-list reveal">
-        <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Reportería de ventas en tiempo real</span></div>
-        <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Colaboradores con roles y accesos</span></div>
-        <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Historial de cada cliente atendido</span></div>
-        <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Factura electrónica automática por venta</span></div>
-        <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Control y seguimiento de tu negocio desde un solo lugar</span></div>
+      <div class="credit-cards reveal">
+        <a class="credit-card" style="display:block;" href="../tiendas/">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1-5h16l1 5"/><path d="M4 9v10a1 1 0 001 1h14a1 1 0 001-1V9"/><path d="M4 9h16"/><path d="M9 20v-5a1 1 0 011-1h4a1 1 0 011 1v5"/></svg></div>
+          <h3>Tiendas</h3>
+          <p>Vendé en mostrador y en línea con el mismo catálogo.</p>
+        </a>
+        <a class="credit-card" style="display:block;" href="../restaurantes/">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+          <h3>Restaurantes</h3>
+          <p>Cobrá en mesa e imprimí el voucher al instante.</p>
+        </a>
+        <a class="credit-card" style="display:block;" href="../servicios/">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+          <h3>Servicios</h3>
+          <p>Cobrá por el trabajo realizado, donde estés.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FAQ ======================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="dot"></span>¿Dudas? Te contamos más</span>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>¿Necesito comprar un POS Paggo para usar el sistema de gestión?</summary>
+          <p>El sistema de gestión funciona conectado a tus ventas con Paggo — un asesor te confirma qué necesitas según cómo cobra tu negocio.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto cuesta?</summary>
+          <p>Todo está incluido en la tarifa de Paggo: Q40.00 al mes, sin costos ocultos, más la comisión de 4.83% (IVA incluido) por cada venta.</p>
+        </details>
+        <details>
+          <summary>¿Puedo usarlo en varios puntos de venta?</summary>
+          <p>Sí, tu catálogo e inventario se mantienen sincronizados entre mostrador y en línea.</p>
+        </details>
+        <details>
+          <summary>¿Cómo empiezo a usarlo?</summary>
+          <p>La afiliación toma minutos, sin papeleo. Un asesor te acompaña en el proceso.</p>
+        </details>
       </div>
     </div>
   </section>

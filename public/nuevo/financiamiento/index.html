@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=11">
+<link rel="stylesheet" href="../style.css?v=12">
 </head>
 <body>
 
@@ -269,6 +269,53 @@
     </div>
   </section>
 
+  <!-- ======================= OPCIONES ======================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="dot"></span>Opciones</span>
+        <h2>Diferentes opciones para tu negocio</h2>
+        <p>Cada negocio necesita algo distinto. Un asesor te ayuda a definir cuál se ajusta mejor a tu caso.</p>
+      </div>
+      <div class="credit-cards reveal">
+        <div class="credit-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3>Dinero rápido</h3>
+          <p>Para cubrir necesidades inmediatas de tu negocio, sin trámites complicados.</p>
+          <div class="note">Monto y plazo — a definir con tu asesor</div>
+        </div>
+        <div class="credit-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <h3>Invierte en tus proyectos</h3>
+          <p>Cuotas fijas para tus planes más grandes, a un plazo definido junto a tu asesor.</p>
+          <div class="note">Monto y plazo — a definir con tu asesor</div>
+        </div>
+        <div class="credit-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+          <h3>Adelanta tus ventas</h3>
+          <p>Recibe antes el dinero de lo que ya vendiste con Paggo, sin esperar a que se libere.</p>
+          <div class="note">Monto y plazo — a definir con tu asesor</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CUÉNTANOS CUÁNTO NECESITAS ======================= -->
+  <section class="section" style="background:var(--bg-soft); padding-top:0; padding-bottom:80px;">
+    <div class="container">
+      <div class="amount-box reveal" data-amount-whatsapp data-whatsapp-phone="50230327066" data-whatsapp-template="Hola, me interesa financiamiento para mi negocio por un monto aproximado de Q{amount}. ¿Me pueden contactar?">
+        <div class="calc-field">
+          <label for="credito-amount">¿Cuánto necesitas para tu negocio?</label>
+          <div class="calc-input">
+            <span>Q</span>
+            <input type="text" id="credito-amount" inputmode="decimal" placeholder="5,000" />
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-amount-whatsapp-btn>Hablar con un asesor</button>
+      </div>
+    </div>
+  </section>
+
   <!-- ======================= CÓMO FUNCIONA ======================= -->
   <section class="section">
     <div class="container">
@@ -282,7 +329,34 @@
         <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Un asesor revisa tu caso y te explica las opciones disponibles</span></div>
         <div class="benefit-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><span>Sin compromiso: primero conversás, luego decidís</span></div>
       </div>
-      <p class="reveal" style="margin-top:32px; color:var(--ink-faint); font-size:14px; max-width:640px;">Las condiciones (monto, plazo y requisitos) dependen de cada negocio y las define un asesor directamente contigo — no publicamos cifras genéricas para evitar confusiones.</p>
+    </div>
+  </section>
+
+  <!-- ======================= FAQ ======================= -->
+  <section class="section" style="background:var(--bg-soft);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="dot"></span>¿Dudas? Te contamos más</span>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>¿Cuáles son los requisitos para acceder a financiamiento?</summary>
+          <p>Depende de tu actividad de ventas con Paggo. Un asesor revisa tu caso y te confirma directamente qué necesitas.</p>
+        </details>
+        <details>
+          <summary>¿Cómo recibo el dinero si me aprueban un crédito?</summary>
+          <p>Un asesor te explica el proceso completo al conversar contigo, según tu caso.</p>
+        </details>
+        <details>
+          <summary>¿Tiene algún costo hablar con un asesor?</summary>
+          <p>No, conversar con un asesor sobre tus opciones no tiene costo ni compromiso.</p>
+        </details>
+        <details>
+          <summary>¿Necesito llevar mucho tiempo usando Paggo para aplicar?</summary>
+          <p>Cuéntale a tu asesor tu situación actual — cada caso se revisa individualmente.</p>
+        </details>
+      </div>
     </div>
   </section>
 
@@ -294,6 +368,7 @@
       <div class="hero-actions reveal">
         <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0" class="btn btn-teal">Hablar con un asesor</a>
       </div>
+      <p class="legal-note reveal" style="margin-left:auto; margin-right:auto;">Las condiciones de financiamiento (monto, plazo y requisitos) son definidas caso por caso por un asesor Paggo y pueden variar según el negocio. Esta página es informativa y no constituye una oferta de crédito.</p>
     </div>
   </section>
 

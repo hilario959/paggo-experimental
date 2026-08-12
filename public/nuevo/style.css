@@ -886,3 +886,67 @@ h1,h2,h3,h4,p{margin:0;}
 /* Reveal-on-scroll */
 .reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
 .reveal.in{ opacity:1; transform:none; }
+
+/* ===========================================================
+   Tarjetas de opciones (Financiamiento)
+=========================================================== */
+.credit-cards{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:24px;
+}
+.credit-card{
+  background:var(--bg-soft);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:28px;
+}
+.credit-card .ic{
+  width:48px; height:48px; border-radius:14px;
+  background:var(--primary-soft);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--primary);
+  margin-bottom:18px;
+}
+.credit-card .ic svg{ width:24px; height:24px; }
+.credit-card h3{ font-size:19px; font-weight:700; color:var(--ink); }
+.credit-card p{ font-size:14.5px; color:var(--ink-soft); line-height:1.55; margin-top:8px; }
+.credit-card .note{ font-size:12.5px; color:var(--ink-faint); margin-top:16px; padding-top:14px; border-top:1px solid var(--line); }
+@media (max-width:900px){ .credit-cards{ grid-template-columns:1fr; } }
+
+/* Simulador simple: monto -> WhatsApp */
+.amount-box{
+  background:var(--bg-soft);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:32px;
+  display:flex; flex-wrap:wrap; align-items:flex-end; gap:20px;
+}
+.amount-box .calc-field{ flex:1; min-width:220px; }
+.amount-box .btn{ flex-shrink:0; }
+@media (max-width:640px){ .amount-box{ padding:24px; } .amount-box .btn{ width:100%; } }
+
+/* FAQ accordion */
+.faq{ max-width:760px; }
+.faq details{ border-bottom:1px solid var(--line); padding:18px 0; }
+.faq details:first-child{ border-top:1px solid var(--line); }
+.faq summary{
+  font-size:16px; font-weight:600; color:var(--ink);
+  cursor:pointer;
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+  list-style:none;
+}
+.faq summary::-webkit-details-marker{ display:none; }
+.faq summary::after{
+  content:"+";
+  font-size:22px; font-weight:400; color:var(--ink-faint);
+  flex-shrink:0;
+}
+.faq details[open] summary::after{ content:"–"; }
+.faq details p{ margin-top:12px; font-size:14.5px; color:var(--ink-soft); line-height:1.6; }
+
+/* Nota legal genérica */
+.legal-note{
+  font-size:12.5px; color:var(--ink-faint); line-height:1.6;
+  max-width:760px; margin-top:20px;
+}

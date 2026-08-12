@@ -66,6 +66,19 @@ if (calcInput) {
   updateCalc();
 }
 
+// Monto -> WhatsApp (financiamiento)
+document.querySelectorAll('[data-amount-whatsapp]').forEach(box => {
+  const input = box.querySelector('input');
+  const btn = box.querySelector('[data-amount-whatsapp-btn]');
+  const phone = box.dataset.whatsappPhone;
+  const template = box.dataset.whatsappTemplate;
+  btn.addEventListener('click', () => {
+    const amount = input.value.trim();
+    const text = template.replace('{amount}', amount || '___');
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
+  });
+});
+
 // Reveal on scroll
 const revealEls = document.querySelectorAll('.reveal');
 const io = new IntersectionObserver((entries) => {
