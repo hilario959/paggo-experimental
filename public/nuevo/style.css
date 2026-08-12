@@ -488,6 +488,9 @@ h1,h2,h3,h4,p{margin:0;}
   gap:14px;
   width:max-content;
   animation:biz-marquee 32s linear infinite;
+  will-change:transform;
+  -webkit-transform:translateZ(0);
+  transform:translateZ(0);
 }
 .biz-marquee:hover .biz-marquee-track{ animation-play-state:paused; }
 .biz-chip{
@@ -780,6 +783,9 @@ h1,h2,h3,h4,p{margin:0;}
   gap:18px;
   width:max-content;
   animation:testi-marquee 40s linear infinite;
+  will-change:transform;
+  -webkit-transform:translateZ(0);
+  transform:translateZ(0);
 }
 .testi-marquee--reverse .testi-marquee-track{ animation-direction:reverse; }
 .testi-photo{
