@@ -14,6 +14,22 @@ mobileMenu.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => mobileMenu.classList.remove('open'));
 });
 
+// Acordeón + imagen (páginas de tipo de negocio)
+document.querySelectorAll('[data-accordion]').forEach(acc => {
+  const items = acc.querySelectorAll('.accordion-feature-item');
+  items.forEach((item, i) => {
+    item.querySelector('button').addEventListener('click', () => {
+      const wasActive = item.classList.contains('active');
+      items.forEach(other => other.classList.remove('active'));
+      if (!wasActive) item.classList.add('active');
+      const img = item.dataset.image;
+      const imageEl = acc.querySelector('.accordion-feature-image img');
+      if (img && imageEl && !wasActive) imageEl.src = img;
+    });
+    if (i === 0) item.classList.add('active');
+  });
+});
+
 // Generic tab groups
 document.querySelectorAll('[data-tabs]').forEach(group => {
   const buttons = group.querySelectorAll('[data-tab]');
