@@ -275,6 +275,7 @@ h1,h2,h3,h4,p{margin:0;}
   grid-template-columns:repeat(3, 1fr);
   gap:6px;
 }
+.mega-utility.cols-2{ grid-template-columns:repeat(2, 1fr); }
 .nav-drop-panel.mega .mega-utility a{
   display:flex; align-items:center; gap:11px;
   padding:10px; border-radius:12px;
