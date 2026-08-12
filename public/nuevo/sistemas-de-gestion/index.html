@@ -8,12 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=19">
+<link rel="stylesheet" href="../style.css?v=21">
 </head>
 <body>
 
 <!-- ======================= NAV ======================= -->
-<header class="nav nav--on-light">
+<header class="nav">
   <div class="container nav-inner">
     <a href="../#top" class="logo">paggo<span class="dot">.</span></a>
     <nav class="nav-links">
@@ -177,7 +177,6 @@
           </div>
         </div>
       </div>
-      <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Alianzas</a>
       <div class="nav-drop">
         <button class="nav-drop-trigger">Soporte
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
@@ -222,7 +221,6 @@
   <a href="../sistemas-de-gestion/">Puntos de Venta</a>
   <a href="../cuenta-empresarial/">Cuenta Empresarial Paggo</a>
   <a href="../financiamiento/">Crédito para tu negocio</a>
-  <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Alianzas</a>
   <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Contáctanos</a>
   <a href="https://ayuda.paggoapp.com/support/home">Centro de Ayuda</a>
   <a href="https://web.paggoapp.com/" class="btn btn-teal btn-block">Paggo Web</a>
@@ -232,22 +230,17 @@
 <main id="top">
 
   <!-- ======================= HERO ======================= -->
-  <section class="mp-hero">
-    <div class="container">
-      <div class="mp-hero-copy reveal">
+  <section class="mp-hero mp-hero--split">
+    <div class="mp-hero-split-grid">
+      <div class="mp-hero-split-copy reveal">
         <span class="eyebrow"><span class="dot"></span>Sistema de gestión</span>
         <h1>Gestiona tu negocio en un solo lugar</h1>
         <div class="mp-hero-actions">
           <a href="https://tienda.paggoapp.com/" class="btn btn-primary">Comenzar</a>
           <span class="mp-hero-price">Incluido en tu tarifa Paggo — Q40.00 / mes, todo incluido</span>
         </div>
-        <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0" class="mp-hero-link">Contáctanos
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
       </div>
-    </div>
-    <div class="container">
-      <div class="mp-hero-image reveal">
+      <div class="mp-hero-split-photo reveal">
         <img src="../assets/hero-gestion-panel.jpg" alt="Panel de control Paggo">
       </div>
     </div>
@@ -339,26 +332,30 @@
     </div>
   </section>
 
-  <!-- ======================= CALLOUT DE VERTICAL ======================= -->
+  <!-- ======================= UN SISTEMA PARA CADA TIPO DE NEGOCIO ======================= -->
   <section class="section">
     <div class="container">
-      <div class="vertical-callout reveal">
-        <div>
-          <span class="eyebrow"><span class="dot"></span>Restaurantes</span>
-          <h2 style="font-size:clamp(26px,3vw,36px); font-weight:600; letter-spacing:-.02em; margin-top:16px; color:var(--ink);">Controla tu restaurante desde un solo lugar</h2>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cobro en mesa con impresión de voucher</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Factura electrónica automática por venta</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Control de inventario de cocina</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Propina activada en cada cobro</li>
-          </ul>
-          <a href="../restaurantes/" class="sector-link" style="color:var(--primary); margin-top:24px;">Ver Paggo para Restaurantes
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="vertical-callout-image">
-          <img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5f9742921667cc7bc_Paggo%20para%20Restaurantes.webp" alt="Paggo para Restaurantes">
-        </div>
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="dot"></span>Hecho a tu medida</span>
+        <h2>Un sistema de gestión para cada tipo de negocio</h2>
+        <p>Tiendas, restaurantes y negocios de servicios funcionan distinto — Paggo se adapta al tuyo.</p>
+      </div>
+      <div class="credit-cards reveal">
+        <a class="credit-card" style="display:block;" href="../tiendas/">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1-5h16l1 5"/><path d="M4 9v10a1 1 0 001 1h14a1 1 0 001-1V9"/><path d="M4 9h16"/><path d="M9 20v-5a1 1 0 011-1h4a1 1 0 011 1v5"/></svg></div>
+          <h3>Tiendas</h3>
+          <p>Catálogo compartido entre mostrador y en línea, con inventario que se actualiza solo.</p>
+        </a>
+        <a class="credit-card" style="display:block;" href="../restaurantes/">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+          <h3>Restaurantes</h3>
+          <p>Cobro en mesa, factura electrónica automática y control de inventario de cocina.</p>
+        </a>
+        <a class="credit-card" style="display:block;" href="../servicios/">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+          <h3>Servicios</h3>
+          <p>Colaboradores con roles y accesos, e historial de cada cliente atendido.</p>
+        </a>
       </div>
     </div>
   </section>
