@@ -679,18 +679,18 @@ h1,h2,h3,h4,p{margin:0;}
 @media (max-width:960px){ .benefits-wrap{ grid-template-columns:1fr; gap:40px; } }
 .benefit-list{ display:flex; flex-direction:column; gap:4px; margin-top:8px; }
 .benefit-row{
-  display:flex; align-items:flex-start; gap:14px;
-  padding:16px 4px;
+  display:flex; align-items:center; gap:18px;
+  padding:20px 4px;
   border-bottom:1px solid var(--line);
 }
 .benefit-row:last-child{ border-bottom:none; }
 .benefit-row .ic{
-  width:30px;height:30px;border-radius:9px;
+  width:52px;height:52px;border-radius:14px;
   background:var(--teal-soft);
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
 }
-.benefit-row .ic svg{ width:16px;height:16px; color:var(--teal-dark); }
-.benefit-row span{ font-size:15.5px; color:var(--ink); line-height:1.55; }
+.benefit-row .ic svg{ width:26px;height:26px; color:var(--teal-dark); }
+.benefit-row span{ font-size:16.5px; font-weight:500; color:var(--ink); line-height:1.5; }
 
 .calc-card{
   background:var(--bg-soft);
