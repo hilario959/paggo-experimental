@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=10">
+<link rel="stylesheet" href="../style.css?v=11">
 </head>
 <body>
 
@@ -21,41 +21,160 @@
         <button class="nav-drop-trigger">Tipo de negocio
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
         </button>
-        <div class="nav-drop-panel">
-          <a href="../tiendas/">Tiendas</a>
-          <a href="../restaurantes/">Restaurantes</a>
-          <a href="../servicios/">Servicios</a>
+        <div class="nav-drop-panel mega">
+          <div class="mega-cols cols-3">
+            <div class="mega-list">
+              <a class="mega-item" href="../tiendas/">
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1-5h16l1 5"/><path d="M4 9v10a1 1 0 001 1h14a1 1 0 001-1V9"/><path d="M4 9h16"/><path d="M9 20v-5a1 1 0 011-1h4a1 1 0 011 1v5"/></svg></span>
+                <span class="mega-item-body"><strong>Tiendas</strong><span>Vendé en mostrador y en línea con el mismo catálogo.</span></span>
+              </a>
+            </div>
+            <div class="mega-list">
+              <a class="mega-item" href="../restaurantes/">
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></span>
+                <span class="mega-item-body"><strong>Restaurantes</strong><span>Cobrá en mesa e imprimí el voucher al instante.</span></span>
+              </a>
+            </div>
+            <div class="mega-list">
+              <a class="mega-item" href="../servicios/">
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></span>
+                <span class="mega-item-body"><strong>Servicios</strong><span>Cobrá por el trabajo realizado, donde estés.</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="mega-utility">
+            <a href="../#calculadora">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="11" x2="8" y2="11.01"/><line x1="12" y1="11" x2="12" y2="11.01"/><line x1="16" y1="11" x2="16" y2="11.01"/><line x1="8" y1="15" x2="8" y2="15.01"/><line x1="12" y1="15" x2="12" y2="15.01"/><line x1="16" y1="15" x2="16" y2="15.01"/></svg></span>
+              <span><strong>Calculadora de comisiones</strong><span>Descubre cuánto ganarás por cada venta.</span></span>
+            </a>
+            <a href="http://ayuda.paggoapp.com">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+              <span><strong>Centro de Ayuda</strong><span>Resuelve tus dudas de inmediato.</span></span>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-4.7 7.6 8.5 8.5 0 01-8.6-.4L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></span>
+              <span><strong>Hablar con un asesor</strong><span>Te contactamos por WhatsApp.</span></span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="nav-drop">
         <button class="nav-drop-trigger">Para cobrar
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
         </button>
-        <div class="nav-drop-panel">
-          <a href="../#producto-pagos">POS Paggo</a>
-          <a href="../#producto-pagos">Paggo Tap</a>
-          <a href="../#producto-pagos">Tienda en línea</a>
-          <a href="../#producto-pagos">Links de Paggo</a>
-          <a href="../#producto-pagos">Paggo Checkout</a>
-          <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Membresías</a>
-          <a href="../soluciones-de-cobro/" class="more">Ver todas las soluciones →</a>
+        <div class="nav-drop-panel mega">
+          <div class="mega-cols cols-2">
+            <div>
+              <div class="mega-col-head">Cobra presencial</div>
+              <div class="mega-list">
+                <a class="mega-item" href="../#producto-pagos" data-tab-target="presencial">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+                  <span class="mega-item-body"><strong>POS Paggo</strong><span>Terminales para el mostrador de tu negocio.</span></span>
+                </a>
+                <a class="mega-item" href="../#producto-pagos" data-tab-target="presencial">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13a10 10 0 0114 0"/><path d="M8.5 16.5a5 5 0 017 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></span>
+                  <span class="mega-item-body"><strong>Paggo Tap</strong><span>Acepta pagos sin contacto desde tu celular.</span></span>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="mega-col-head">Cobra en línea</div>
+              <div class="mega-list">
+                <a class="mega-item" href="../#producto-pagos" data-tab-target="online">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></span>
+                  <span class="mega-item-body"><strong>Tienda en línea</strong><span>Catálogo compartido entre mostrador y en línea.</span></span>
+                </a>
+                <a class="mega-item" href="../#producto-pagos" data-tab-target="online">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></span>
+                  <span class="mega-item-body"><strong>Links de Paggo</strong><span>Envía un link de pago y cobra a distancia.</span></span>
+                </a>
+                <a class="mega-item" href="../#producto-pagos" data-tab-target="online">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></span>
+                  <span class="mega-item-body"><strong>Paggo Checkout</strong><span>Botón de pago para tu tienda en línea.</span></span>
+                </a>
+                <a class="mega-item" href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></span>
+                  <span class="mega-item-body"><strong>Membresías</strong><span>Cobros recurrentes para tu negocio.</span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mega-utility">
+            <a href="../soluciones-de-cobro/">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span>
+              <span><strong>Ver todas las soluciones</strong><span>Compara todas las formas de cobrar.</span></span>
+            </a>
+            <a href="http://ayuda.paggoapp.com">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+              <span><strong>Centro de Ayuda</strong><span>Resuelve tus dudas de inmediato.</span></span>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-4.7 7.6 8.5 8.5 0 01-8.6-.4L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></span>
+              <span><strong>Hablar con un asesor</strong><span>Te contactamos por WhatsApp.</span></span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="nav-drop">
         <button class="nav-drop-trigger">Para gestionar
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
         </button>
-        <div class="nav-drop-panel">
-          <a href="../sistemas-de-gestion/">Puntos de Venta</a>
-          <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Cuenta Empresarial Paggo</a>
+        <div class="nav-drop-panel mega">
+          <div class="mega-cols cols-1">
+            <div class="mega-list">
+              <a class="mega-item" href="../sistemas-de-gestion/">
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span>
+                <span class="mega-item-body"><strong>Puntos de Venta</strong><span>Inventario, reportería y roles en un solo lugar.</span></span>
+              </a>
+              <a class="mega-item" href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1"/><line x1="9" y1="7" x2="9" y2="7.01"/><line x1="15" y1="7" x2="15" y2="7.01"/><line x1="9" y1="11" x2="9" y2="11.01"/><line x1="15" y1="11" x2="15" y2="11.01"/><line x1="9" y1="21" x2="9" y2="17"/><line x1="15" y1="21" x2="15" y2="17"/></svg></span>
+                <span class="mega-item-body"><strong>Cuenta Empresarial Paggo</strong><span>Banca pensada para tu negocio.</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="mega-utility">
+            <a href="../#calculadora">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="11" x2="8" y2="11.01"/><line x1="12" y1="11" x2="12" y2="11.01"/><line x1="16" y1="11" x2="16" y2="11.01"/><line x1="8" y1="15" x2="8" y2="15.01"/><line x1="12" y1="15" x2="12" y2="15.01"/><line x1="16" y1="15" x2="16" y2="15.01"/></svg></span>
+              <span><strong>Calculadora de comisiones</strong><span>Descubre cuánto ganarás por cada venta.</span></span>
+            </a>
+            <a href="http://ayuda.paggoapp.com">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+              <span><strong>Centro de Ayuda</strong><span>Resuelve tus dudas de inmediato.</span></span>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-4.7 7.6 8.5 8.5 0 01-8.6-.4L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></span>
+              <span><strong>Hablar con un asesor</strong><span>Te contactamos por WhatsApp.</span></span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="nav-drop">
         <button class="nav-drop-trigger">Financiamiento
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
         </button>
-        <div class="nav-drop-panel">
-          <a href="../financiamiento/">Crédito para tu negocio</a>
+        <div class="nav-drop-panel mega">
+          <div class="mega-cols cols-1">
+            <div class="mega-list">
+              <a class="mega-item" href="../financiamiento/">
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 15a2.5 2.5 0 002.5 2h1a2 2 0 000-4h-2a2 2 0 010-4h1a2.5 2.5 0 012.5 2"/><line x1="12" y1="6" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="18"/></svg></span>
+                <span class="mega-item-body"><strong>Crédito para tu negocio</strong><span>Financiamiento según tu actividad de ventas con Paggo.</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="mega-utility">
+            <a href="../#calculadora">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="11" x2="8" y2="11.01"/><line x1="12" y1="11" x2="12" y2="11.01"/><line x1="16" y1="11" x2="16" y2="11.01"/><line x1="8" y1="15" x2="8" y2="15.01"/><line x1="12" y1="15" x2="12" y2="15.01"/><line x1="16" y1="15" x2="16" y2="15.01"/></svg></span>
+              <span><strong>Calculadora de comisiones</strong><span>Descubre cuánto ganarás por cada venta.</span></span>
+            </a>
+            <a href="http://ayuda.paggoapp.com">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+              <span><strong>Centro de Ayuda</strong><span>Resuelve tus dudas de inmediato.</span></span>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-4.7 7.6 8.5 8.5 0 01-8.6-.4L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></span>
+              <span><strong>Hablar con un asesor</strong><span>Te contactamos por WhatsApp.</span></span>
+            </a>
+          </div>
         </div>
       </div>
       <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Alianzas</a>
@@ -63,13 +182,43 @@
         <button class="nav-drop-trigger">Soporte
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
         </button>
-        <div class="nav-drop-panel">
-          <a href="https://www.paggo.com/conocenos">Sobre Paggo</a>
-          <a href="https://www.paggo.com/gt/paggo-promos">Paggo Promos</a>
-          <a href="https://www.paggo.com/gt/paggo-tips">Paggo Tips</a>
-          <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Contáctanos</a>
-          <a href="http://ayuda.paggoapp.com">Centro de Ayuda</a>
-          <a href="https://www.paggo.com/gt/motivos-de-rechazo">Motivos de Rechazo</a>
+        <div class="nav-drop-panel mega">
+          <div class="mega-cols cols-2">
+            <div>
+              <div class="mega-col-head">Sobre Paggo</div>
+              <div class="mega-list">
+                <a class="mega-item" href="https://www.paggo.com/conocenos">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>
+                  <span class="mega-item-body"><strong>Sobre Paggo</strong><span>Conoce la historia detrás de Paggo.</span></span>
+                </a>
+                <a class="mega-item" href="https://www.paggo.com/gt/paggo-promos">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41L13.42 20.58a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></span>
+                  <span class="mega-item-body"><strong>Paggo Promos</strong><span>Promociones y descuentos vigentes.</span></span>
+                </a>
+                <a class="mega-item" href="https://www.paggo.com/gt/paggo-tips">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 00-4 12.72c.68.6 1 1.4 1 2.28h6c0-.88.32-1.68 1-2.28A7 7 0 0012 2z"/></svg></span>
+                  <span class="mega-item-body"><strong>Paggo Tips</strong><span>Consejos para hacer crecer tu negocio.</span></span>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="mega-col-head">Ayuda</div>
+              <div class="mega-list">
+                <a class="mega-item" href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-4.7 7.6 8.5 8.5 0 01-8.6-.4L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></span>
+                  <span class="mega-item-body"><strong>Contáctanos</strong><span>Escríbenos por WhatsApp.</span></span>
+                </a>
+                <a class="mega-item" href="http://ayuda.paggoapp.com">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+                  <span class="mega-item-body"><strong>Centro de Ayuda</strong><span>Resuelve tus dudas de inmediato.</span></span>
+                </a>
+                <a class="mega-item" href="https://www.paggo.com/gt/motivos-de-rechazo">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+                  <span class="mega-item-body"><strong>Motivos de Rechazo</strong><span>Entiende por qué se rechazó un pago.</span></span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
