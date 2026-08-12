@@ -9,7 +9,7 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 // de Vite devuelve el index.html de la app React para cualquier ruta sin
 // archivo exacto, antes de que se resuelva el index.html de un subdirectorio
 // estático dentro de public/.
-const NUEVO_PAGES = ["", "tiendas", "restaurantes", "servicios", "financiamiento", "sistemas-de-gestion", "soluciones-de-cobro"];
+const NUEVO_PAGES = ["", "tiendas", "restaurantes", "servicios", "financiamiento", "sistemas-de-gestion", "soluciones-de-cobro", "cuenta-empresarial"];
 
 function serveNuevoLanding(): Plugin {
   return {

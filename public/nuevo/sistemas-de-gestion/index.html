@@ -8,12 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=16">
+<link rel="stylesheet" href="../style.css?v=18">
 </head>
 <body>
 
 <!-- ======================= NAV ======================= -->
-<header class="nav">
+<header class="nav nav--on-light">
   <div class="container nav-inner">
     <a href="../#top" class="logo">paggo<span class="dot">.</span></a>
     <nav class="nav-links">
@@ -126,7 +126,7 @@
                 <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span>
                 <span class="mega-item-body"><strong>Puntos de Venta</strong><span>Inventario, reportería y roles en un solo lugar.</span></span>
               </a>
-              <a class="mega-item" href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">
+              <a class="mega-item" href="../cuenta-empresarial/">
                 <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1"/><line x1="9" y1="7" x2="9" y2="7.01"/><line x1="15" y1="7" x2="15" y2="7.01"/><line x1="9" y1="11" x2="9" y2="11.01"/><line x1="15" y1="11" x2="15" y2="11.01"/><line x1="9" y1="21" x2="9" y2="17"/><line x1="15" y1="21" x2="15" y2="17"/></svg></span>
                 <span class="mega-item-body"><strong>Cuenta Empresarial Paggo</strong><span>Banca pensada para tu negocio.</span></span>
               </a>
@@ -220,7 +220,7 @@
   <a href="../#producto-pagos">Paggo Checkout</a>
   <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Membresías</a>
   <a href="../sistemas-de-gestion/">Puntos de Venta</a>
-  <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Cuenta Empresarial Paggo</a>
+  <a href="../cuenta-empresarial/">Cuenta Empresarial Paggo</a>
   <a href="../financiamiento/">Crédito para tu negocio</a>
   <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Alianzas</a>
   <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0">Contáctanos</a>
@@ -232,22 +232,23 @@
 <main id="top">
 
   <!-- ======================= HERO ======================= -->
-  <section class="page-hero-solid">
-    <div class="container hero-square-content">
-      <span class="eyebrow"><span class="dot"></span>Para gestionar</span>
-      <h1>Sistemas de gestión Paggo</h1>
-      <p>Inventario, reportería, roles de equipo y facturación conectados a cada venta — gestiona tu negocio desde un solo lugar, sin sistemas separados.</p>
-      <div class="hero-actions">
-        <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0" class="btn btn-teal">Hablar con un asesor</a>
+  <section class="mp-hero">
+    <div class="container">
+      <div class="mp-hero-copy reveal">
+        <span class="eyebrow"><span class="dot"></span>Sistema de gestión</span>
+        <h1>Gestiona tu negocio en un solo lugar</h1>
+        <div class="mp-hero-actions">
+          <a href="https://tienda.paggoapp.com/" class="btn btn-primary">Comenzar</a>
+          <span class="mp-hero-price">Incluido en tu tarifa Paggo — Q40.00 / mes, todo incluido</span>
+        </div>
+        <a href="https://api.whatsapp.com/send/?phone=50230327066&text&type=phone_number&app_absent=0" class="mp-hero-link">Contáctanos
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </div>
     </div>
-  </section>
-
-  <!-- ======================= IMAGEN PUNTO DE VENTA ======================= -->
-  <section class="section section--tight">
     <div class="container">
-      <div class="reveal" style="border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-lg);">
-        <img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a586d2d8703394e9377ed60_POS%20de%20Paggo.webp" alt="Punto de venta Paggo" style="width:100%; height:auto; max-height:460px; object-fit:cover; display:block;">
+      <div class="mp-hero-image reveal">
+        <img src="../assets/hero-gestion-panel.jpg" alt="Panel de control Paggo">
       </div>
     </div>
   </section>
@@ -263,9 +264,9 @@
       <div class="tabbar full reveal">
         <button data-tab="punto-de-venta" class="active">Punto de venta</button>
         <button data-tab="catalogo">Catálogo</button>
-        <button data-tab="reporteria">Reportería</button>
+        <button data-tab="reporteria">Métricas y ventas</button>
         <button data-tab="facturacion">Facturación</button>
-        <button data-tab="equipo">Equipo</button>
+        <button data-tab="equipo">Equipo de trabajo</button>
       </div>
       <div data-panel="punto-de-venta" class="tab-panel active">
         <div class="benefit-list">
@@ -305,31 +306,88 @@
     </div>
   </section>
 
-  <!-- ======================= HECHO PARA TU TIPO DE NEGOCIO ======================= -->
-  <section class="section" style="background:var(--bg-soft);">
+  <!-- ======================= HECHO PARA TU RUBRO ======================= -->
+  <section class="section section--tight" style="background:var(--bg-soft);">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow"><span class="dot"></span>Hecho para tu rubro</span>
-        <h2>Elige tu tipo de negocio</h2>
-        <p>Cada rubro cobra y gestiona distinto — mira cómo se adapta Paggo al tuyo.</p>
+        <h2>Hecho para tu rubro</h2>
       </div>
-      <div class="credit-cards reveal">
-        <a class="credit-card" style="display:block;" href="../tiendas/">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1-5h16l1 5"/><path d="M4 9v10a1 1 0 001 1h14a1 1 0 001-1V9"/><path d="M4 9h16"/><path d="M9 20v-5a1 1 0 011-1h4a1 1 0 011 1v5"/></svg></div>
-          <h3>Tiendas</h3>
-          <p>Vendé en mostrador y en línea con el mismo catálogo.</p>
-        </a>
-        <a class="credit-card" style="display:block;" href="../restaurantes/">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
-          <h3>Restaurantes</h3>
-          <p>Cobrá en mesa e imprimí el voucher al instante.</p>
-        </a>
-        <a class="credit-card" style="display:block;" href="../servicios/">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
-          <h3>Servicios</h3>
-          <p>Cobrá por el trabajo realizado, donde estés.</p>
-        </a>
+    </div>
+    <div class="biz-marquee light reveal" role="list" aria-label="Tipos de negocio que usan Paggo">
+      <div class="biz-marquee-track">
+        <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e49e01104bf58d0b22_Paggo%20para%20Farmacias.webp" alt="">Farmacias</div>
+        <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5f9742921667cc7bc_Paggo%20para%20Restaurantes.webp" alt="">Restaurantes</div>
+        <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e4215f1f24a9a240ef_Paggo%20para%20Salones%20de%20Belleza.webp" alt="">Salones de Belleza</div>
+        <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683155_Paggo%20para%20Tiendas%20de%20Ropa.webp" alt="">Tiendas de Ropa</div>
+        <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5dfac9fd687d39cf2_Paggo%20para%20Talleres%20Meca%CC%81nicos.webp" alt="">Talleres Mecánicos</div>
+        <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e52ba0d59f2fb2f065_Paggo%20para%20Supermercados.webp" alt="">Supermercados</div>
+        <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e566570458eb68b12b_Paggo%20para%20Ferreteri%CC%81as.webp" alt="">Ferreterías</div>
+        <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5bd2a8992cca5158c_Paggo%20para%20Cafeteri%CC%81as.webp" alt="">Cafeterías</div>
+        <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683131_Paggo%20para%20Hoteles.webp" alt="">Hoteles</div>
+        <div class="biz-chip" role="listitem"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5ed14f4eb26171748_Paggo%20para%20Tiendas%20de%20conveniencia.webp" alt="">Tiendas de Conveniencia</div>
+        <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e49e01104bf58d0b22_Paggo%20para%20Farmacias.webp" alt="">Farmacias</div>
+        <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5f9742921667cc7bc_Paggo%20para%20Restaurantes.webp" alt="">Restaurantes</div>
+        <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e4215f1f24a9a240ef_Paggo%20para%20Salones%20de%20Belleza.webp" alt="">Salones de Belleza</div>
+        <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683155_Paggo%20para%20Tiendas%20de%20Ropa.webp" alt="">Tiendas de Ropa</div>
+        <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5dfac9fd687d39cf2_Paggo%20para%20Talleres%20Meca%CC%81nicos.webp" alt="">Talleres Mecánicos</div>
+        <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e52ba0d59f2fb2f065_Paggo%20para%20Supermercados.webp" alt="">Supermercados</div>
+        <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e566570458eb68b12b_Paggo%20para%20Ferreteri%CC%81as.webp" alt="">Ferreterías</div>
+        <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5bd2a8992cca5158c_Paggo%20para%20Cafeteri%CC%81as.webp" alt="">Cafeterías</div>
+        <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5794d316547683131_Paggo%20para%20Hoteles.webp" alt="">Hoteles</div>
+        <div class="biz-chip" aria-hidden="true"><img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5ed14f4eb26171748_Paggo%20para%20Tiendas%20de%20conveniencia.webp" alt="">Tiendas de Conveniencia</div>
       </div>
+    </div>
+  </section>
+
+  <!-- ======================= CALLOUT DE VERTICAL ======================= -->
+  <section class="section">
+    <div class="container">
+      <div class="vertical-callout reveal">
+        <div>
+          <span class="eyebrow"><span class="dot"></span>Restaurantes</span>
+          <h2 style="font-size:clamp(26px,3vw,36px); font-weight:600; letter-spacing:-.02em; margin-top:16px; color:var(--ink);">Controla tu restaurante desde un solo lugar</h2>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cobro en mesa con impresión de voucher</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Factura electrónica automática por venta</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Control de inventario de cocina</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Propina activada en cada cobro</li>
+          </ul>
+          <a href="../restaurantes/" class="sector-link" style="color:var(--primary); margin-top:24px;">Ver Paggo para Restaurantes
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="vertical-callout-image">
+          <img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf5cf/6a46c3e5f9742921667cc7bc_Paggo%20para%20Restaurantes.webp" alt="Paggo para Restaurantes">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= HARDWARE ======================= -->
+  <section class="section" style="background:var(--bg-soft);">
+    <div class="container">
+      <div class="vertical-callout reveal">
+        <div class="vertical-callout-image">
+          <img src="https://cdn.prod.website-files.com/667daa8031839a66b0faf623/6a586cdea54d5fddc561adfd_Paggo%20Plus.webp" alt="Paggo Plus">
+        </div>
+        <div>
+          <span class="eyebrow"><span class="dot"></span>Hardware</span>
+          <h2 style="font-size:clamp(26px,3vw,36px); font-weight:600; letter-spacing:-.02em; margin-top:16px; color:var(--ink);">Tu Paggo Plus, con impresora y 5G integrados</h2>
+          <p style="color:var(--ink-soft); font-size:15.5px; line-height:1.6; margin-top:14px; max-width:420px;">Terminal más potente, con impresora integrada y 5G — ideal para imprimir el voucher al instante y mantenerte conectado, vendas donde vendas.</p>
+          <a href="https://tienda.paggo.com/products/paggo-plus" class="sector-link" style="color:var(--primary); margin-top:20px;">Conocer Paggo Plus
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= SOPORTE ======================= -->
+  <section class="section section--tight">
+    <div class="container trust-line reveal">
+      <span class="eyebrow"><span class="dot"></span>Soporte</span>
+      <h2 style="font-size:clamp(24px,2.8vw,32px); font-weight:600; letter-spacing:-.02em; margin-top:16px; color:var(--ink);">Soporte disponible cuando lo necesites</h2>
+      <p style="color:var(--ink-soft); font-size:15.5px; margin-top:12px; max-width:520px; margin-left:auto; margin-right:auto;">Escríbele a un asesor por WhatsApp o visita el Centro de Ayuda para resolver tus dudas.</p>
     </div>
   </section>
 
