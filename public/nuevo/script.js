@@ -44,20 +44,6 @@ document.querySelectorAll('[data-tabs]').forEach(group => {
   });
 });
 
-// Carousel arrows (Elige cómo aceptar pagos)
-document.querySelectorAll('.carousel-head').forEach(head => {
-  const section = head.closest('section');
-  const arrows = head.querySelectorAll('[data-carousel-dir]');
-  arrows.forEach(arrow => {
-    arrow.addEventListener('click', () => {
-      const track = section.querySelector('.tab-panel.active .product-grid-full');
-      if (!track) return;
-      const tileWidth = track.querySelector('.product-tile')?.offsetWidth || 340;
-      track.scrollBy({ left: (tileWidth + 4) * parseInt(arrow.dataset.carouselDir, 10), behavior: 'smooth' });
-    });
-  });
-});
-
 // Fee calculator (4.83% comisión, IVA incluido)
 const RATE = 0.0483;
 const calcInput = document.getElementById('calc-amount');

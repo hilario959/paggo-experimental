@@ -382,6 +382,7 @@ h1,h2,h3,h4,p{margin:0;}
   max-width:680px;
   margin:22px auto 0;
 }
+.hero-actions{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
 .hero-square .hero-actions{ margin-top:32px; justify-content:center; }
 @media (max-width:640px){
   .hero-square{ height:88vh; min-height:600px; }
@@ -511,19 +512,6 @@ h1,h2,h3,h4,p{margin:0;}
   justify-content:space-between;
   gap:24px;
 }
-.carousel-arrows{ display:flex; gap:10px; flex-shrink:0; }
-.carousel-arrow{
-  width:44px; height:44px;
-  border-radius:50%;
-  border:1px solid var(--line);
-  background:#fff;
-  color:var(--ink);
-  display:flex; align-items:center; justify-content:center;
-  transition:background .2s, border-color .2s, opacity .2s;
-}
-.carousel-arrow svg{ width:18px; height:18px; }
-.carousel-arrow:hover{ background:var(--bg-soft); border-color:var(--ink-faint); }
-.carousel-arrow:disabled{ opacity:.35; pointer-events:none; }
 @media (max-width:640px){ .carousel-head{ flex-direction:column; align-items:flex-start; } }
 
 .tab-panel{ display:none; }
@@ -762,7 +750,6 @@ h1,h2,h3,h4,p{margin:0;}
   animation:testi-marquee 40s linear infinite;
 }
 .testi-marquee--reverse .testi-marquee-track{ animation-direction:reverse; }
-.testi-marquee:hover .testi-marquee-track{ animation-play-state:paused; }
 .testi-photo{
   flex:0 0 auto;
   width:min(22vw,260px);
@@ -782,11 +769,13 @@ h1,h2,h3,h4,p{margin:0;}
 .testi-center{ text-align:center; }
 .testi-stars{
   display:flex;
+  align-items:center;
   justify-content:center;
   gap:4px;
   margin-bottom:18px;
 }
 .testi-stars svg{ width:22px; height:22px; color:#F5A623; }
+.testi-stars .testi-google-g{ width:24px; height:24px; margin-right:6px; color:initial; }
 .testi-line{
   font-size:clamp(20px,2.6vw,30px);
   font-weight:600;
